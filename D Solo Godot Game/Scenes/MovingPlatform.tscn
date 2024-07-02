@@ -1,0 +1,188 @@
+[gd_scene load_steps=12 format=3 uid="uid://bag3823x1o544"]
+
+[ext_resource type="Script" path="res://Scripts/MovingPlatform.cs" id="1_2am8i"]
+[ext_resource type="Material" uid="uid://cwn8qjtyhoy4o" path="res://Materials/FloorMat.tres" id="2_mahd8"]
+[ext_resource type="Material" uid="uid://bd23an5mad5dg" path="res://Materials/BlackOutlineMat.tres" id="3_2ephn"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_7e50t"]
+size = Vector3(2, 0.125, 2)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_gg1xv"]
+size = Vector3(2, 0.25, 2)
+
+[sub_resource type="BoxMesh" id="BoxMesh_7bnpx"]
+size = Vector3(2, 0.25, 2)
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_3qipl"]
+_surfaces = [{
+"aabb": AABB(-1.00577, -0.130773, -1.00577, 2.01155, 0.261557, 2.01156),
+"attribute_data": PackedByteArray(0, 0, 0, 0, 0, 0, 0, 0, 171, 170, 42, 63, 0, 0, 0, 0, 171, 170, 170, 62, 0, 0, 0, 0, 0, 0, 128, 63, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 63, 171, 170, 42, 63, 0, 0, 0, 63, 171, 170, 170, 62, 0, 0, 0, 63, 0, 0, 128, 63, 0, 0, 0, 63, 171, 170, 170, 62, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 63, 171, 170, 42, 63, 0, 0, 0, 0, 171, 170, 170, 62, 0, 0, 0, 63, 171, 170, 170, 62, 0, 0, 0, 63, 0, 0, 0, 0, 0, 0, 128, 63, 171, 170, 42, 63, 0, 0, 0, 63, 171, 170, 170, 62, 0, 0, 128, 63, 171, 170, 170, 62, 0, 0, 0, 63, 171, 170, 42, 63, 0, 0, 0, 63, 171, 170, 42, 63, 0, 0, 0, 63, 0, 0, 128, 63, 0, 0, 0, 63, 171, 170, 170, 62, 0, 0, 128, 63, 171, 170, 42, 63, 0, 0, 128, 63, 171, 170, 42, 63, 0, 0, 128, 63, 0, 0, 128, 63, 0, 0, 128, 63),
+"format": 4119,
+"index_count": 36,
+"index_data": PackedByteArray(0, 0, 4, 0, 2, 0, 2, 0, 4, 0, 6, 0, 1, 0, 5, 0, 3, 0, 3, 0, 5, 0, 7, 0, 8, 0, 12, 0, 10, 0, 10, 0, 12, 0, 14, 0, 9, 0, 13, 0, 11, 0, 11, 0, 13, 0, 15, 0, 16, 0, 20, 0, 18, 0, 18, 0, 20, 0, 22, 0, 17, 0, 21, 0, 19, 0, 19, 0, 21, 0, 23, 0),
+"primitive": 3,
+"vertex_count": 24,
+"vertex_data": PackedByteArray(48, 189, 128, 191, 125, 233, 5, 62, 48, 189, 128, 63, 255, 127, 255, 127, 255, 255, 255, 191, 48, 189, 128, 63, 125, 233, 5, 62, 48, 189, 128, 191, 255, 255, 255, 255, 0, 0, 255, 191, 48, 189, 128, 63, 125, 233, 5, 62, 48, 189, 128, 63, 255, 127, 255, 127, 255, 255, 255, 191, 48, 189, 128, 191, 125, 233, 5, 62, 48, 189, 128, 191, 255, 255, 255, 255, 0, 0, 255, 191, 48, 189, 128, 191, 125, 233, 5, 190, 48, 189, 128, 63, 255, 127, 255, 127, 255, 255, 255, 191, 48, 189, 128, 63, 125, 233, 5, 190, 48, 189, 128, 191, 255, 255, 255, 255, 0, 0, 255, 191, 48, 189, 128, 63, 125, 233, 5, 190, 48, 189, 128, 63, 255, 127, 255, 127, 255, 255, 255, 191, 48, 189, 128, 191, 125, 233, 5, 190, 48, 189, 128, 191, 255, 255, 255, 255, 0, 0, 255, 191, 48, 189, 128, 63, 125, 233, 5, 62, 48, 189, 128, 63, 255, 255, 0, 128, 255, 255, 255, 255, 48, 189, 128, 191, 125, 233, 5, 62, 48, 189, 128, 191, 0, 0, 0, 128, 255, 127, 255, 191, 48, 189, 128, 63, 125, 233, 5, 62, 48, 189, 128, 191, 255, 255, 0, 128, 255, 255, 255, 255, 48, 189, 128, 191, 125, 233, 5, 62, 48, 189, 128, 63, 0, 0, 0, 128, 255, 127, 255, 191, 48, 189, 128, 63, 125, 233, 5, 190, 48, 189, 128, 63, 255, 255, 0, 128, 255, 255, 255, 255, 48, 189, 128, 191, 125, 233, 5, 190, 48, 189, 128, 191, 0, 0, 0, 128, 255, 127, 255, 191, 48, 189, 128, 63, 125, 233, 5, 190, 48, 189, 128, 191, 255, 255, 0, 128, 255, 255, 255, 255, 48, 189, 128, 191, 125, 233, 5, 190, 48, 189, 128, 63, 0, 0, 0, 128, 255, 127, 255, 191, 48, 189, 128, 63, 125, 233, 5, 62, 48, 189, 128, 63, 0, 128, 255, 255, 0, 0, 255, 191, 48, 189, 128, 191, 125, 233, 5, 190, 48, 189, 128, 63, 0, 128, 0, 0, 255, 255, 255, 191, 48, 189, 128, 191, 125, 233, 5, 62, 48, 189, 128, 63, 0, 128, 255, 255, 0, 0, 255, 191, 48, 189, 128, 63, 125, 233, 5, 190, 48, 189, 128, 63, 0, 128, 0, 0, 255, 255, 255, 191, 48, 189, 128, 63, 125, 233, 5, 62, 48, 189, 128, 191, 0, 128, 255, 255, 0, 0, 255, 191, 48, 189, 128, 191, 125, 233, 5, 190, 48, 189, 128, 191, 0, 128, 0, 0, 255, 255, 255, 191, 48, 189, 128, 191, 125, 233, 5, 62, 48, 189, 128, 191, 0, 128, 255, 255, 0, 0, 255, 191, 48, 189, 128, 63, 125, 233, 5, 190, 48, 189, 128, 191, 0, 128, 0, 0, 255, 255, 255, 191)
+}]
+
+[sub_resource type="Animation" id="Animation_qhftg"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("PlatformMesh:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0, 0.125, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("CollisionShape3D:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0, 0.125, 0)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("AnimatableBody3D:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0, 0.125, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_u24yg"]
+resource_name = "move_fwd_bck"
+length = 3.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("CollisionShape3D:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector3(0, 0.125, 0), Vector3(0, 0.125, 10)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("PlatformMesh:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector3(0, 0.125, 0), Vector3(0, 0.125, 10)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("AnimatableBody3D:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector3(0, 0.125, 0), Vector3(0, 0.125, 10)]
+}
+
+[sub_resource type="Animation" id="Animation_pomld"]
+resource_name = "move_up_down"
+length = 1.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("PlatformMesh:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector3(0, 0.125, 0), Vector3(0, 6.125, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("CollisionShape3D:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 1.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector3(0, 0.125, 0), Vector3(0, 6.125, 0)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("AnimatableBody3D:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 1.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector3(0, 0.125, 0), Vector3(0, 6.125, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_o1ur5"]
+_data = {
+"RESET": SubResource("Animation_qhftg"),
+"move_fwd_bck": SubResource("Animation_u24yg"),
+"move_up_down": SubResource("Animation_pomld")
+}
+
+[node name="RigidBody3D" type="RigidBody3D" node_paths=PackedStringArray("mesh", "outlines", "receivers")]
+collision_layer = 3
+collision_mask = 3
+freeze = true
+script = ExtResource("1_2am8i")
+mesh = NodePath("PlatformMesh")
+outlines = [NodePath("PlatformMesh/Outline")]
+receivers = []
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.125, 0)
+shape = SubResource("BoxShape3D_7e50t")
+
+[node name="AnimatableBody3D" type="AnimatableBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.125, 0)
+collision_layer = 3
+collision_mask = 3
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="AnimatableBody3D"]
+shape = SubResource("BoxShape3D_gg1xv")
+
+[node name="PlatformMesh" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 0.125, 0)
+mesh = SubResource("BoxMesh_7bnpx")
+skeleton = NodePath("")
+surface_material_override/0 = ExtResource("2_mahd8")
+
+[node name="Outline" type="MeshInstance3D" parent="PlatformMesh"]
+mesh = SubResource("ArrayMesh_3qipl")
+surface_material_override/0 = ExtResource("3_2ephn")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_o1ur5")
+}

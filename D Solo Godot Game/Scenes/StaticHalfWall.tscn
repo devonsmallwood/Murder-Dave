@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://bgu4qvk7mg3h4"]
+
+[ext_resource type="Material" uid="uid://cx3tjxi5rsfvg" path="res://Materials/WallMat.tres" id="1_q7v4c"]
+
+[node name="StaticHalfWall" type="CSGBox3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.5, 0)
+use_collision = true
+collision_layer = 3
+collision_mask = 3
+size = Vector3(0.5, 5, 2.5)
+material = ExtResource("1_q7v4c")

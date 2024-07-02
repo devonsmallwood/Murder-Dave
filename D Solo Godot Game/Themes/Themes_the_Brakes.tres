@@ -1,0 +1,6 @@
+[gd_resource type="Theme" load_steps=2 format=3 uid="uid://c1r8jcjped73o"]
+
+[ext_resource type="FontFile" uid="uid://cyjdhnnvrn8e1" path="res://Assets/PoetsenOne-Regular.ttf" id="1_nmeil"]
+
+[resource]
+default_font = ExtResource("1_nmeil")

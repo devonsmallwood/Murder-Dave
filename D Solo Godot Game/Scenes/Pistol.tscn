@@ -1,0 +1,123 @@
+[gd_scene load_steps=12 format=3 uid="uid://byuu2gh8ddrsc"]
+
+[ext_resource type="PackedScene" uid="uid://cntyiih4y07sg" path="res://Assets/Pistol.glb" id="1_e4l4g"]
+[ext_resource type="Script" path="res://Scripts/Pistol.cs" id="2_35ag3"]
+[ext_resource type="Texture2D" uid="uid://bj7ekuif51afh" path="res://Assets/flash04.png" id="3_h5m8i"]
+[ext_resource type="AudioStream" uid="uid://c4aa7dwrbm4bt" path="res://Assets/gunshot.mp3" id="3_qi7fr"]
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_x72q7"]
+gravity = Vector3(0, 0, 0)
+angle_min = -360.0
+angle_max = 360.0
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_gbdwv"]
+transparency = 4
+blend_mode = 1
+albedo_texture = ExtResource("3_h5m8i")
+emission_enabled = true
+emission = Color(1, 0.498039, 0, 1)
+emission_energy_multiplier = 3.0
+billboard_mode = 3
+particles_anim_h_frames = 1
+particles_anim_v_frames = 1
+particles_anim_loop = false
+
+[sub_resource type="QuadMesh" id="QuadMesh_gqvpn"]
+material = SubResource("StandardMaterial3D_gbdwv")
+size = Vector2(0.25, 0.25)
+
+[sub_resource type="Animation" id="Animation_05p35"]
+resource_name = "Fire"
+length = 1.5
+tracks/0/type = "position_3d"
+tracks/0/imported = true
+tracks/0/enabled = true
+tracks/0/path = NodePath("PistolArmature/Skeleton3D:Control")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = PackedFloat32Array(0, 1, 1.19207, -3.13582, -0.00212148, 0.366667, 1, 1.19207, -3.13582, -0.00212148, 0.4, 1, 1.19207, -3.36326, -0.00212148, 0.433333, 1, 1.19207, -3.84995, -0.00212148, 0.466667, 1, 1.19207, -4.07738, -0.00212148, 0.5, 1, 1.19207, -3.94718, -0.00212148, 0.566667, 1, 1.19207, -3.26602, -0.00212148, 0.6, 1, 1.19207, -3.13582, -0.00212148)
+tracks/1/type = "rotation_3d"
+tracks/1/imported = true
+tracks/1/enabled = true
+tracks/1/path = NodePath("PistolArmature/Skeleton3D:Control")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = PackedFloat32Array(0, 1, 2.9534e-08, 0.707107, -1.81857e-07, 0.707107, 0.366667, 1, 2.9534e-08, 0.707107, -1.81857e-07, 0.707107, 0.4, 1, -0.0150235, 0.706947, 0.0150233, 0.706947, 0.433333, 1, -0.0471719, 0.705532, 0.0471717, 0.705532, 0.466667, 1, -0.0621512, 0.70437, 0.0621511, 0.70437, 0.5, 1, -0.0535814, 0.705074, 0.0535813, 0.705074, 0.566667, 1, -0.00859848, 0.707055, 0.00859833, 0.707054, 0.6, 1, 2.9534e-08, 0.707107, -1.81857e-07, 0.707107)
+tracks/2/type = "position_3d"
+tracks/2/imported = true
+tracks/2/enabled = true
+tracks/2/path = NodePath("PistolArmature/Skeleton3D:Slide")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = PackedFloat32Array(0, 1, -0.00212036, -1.60594, -1.19207, 0.233333, 1, -0.00212036, -1.60594, -1.19207, 0.266667, 1, -0.00212036, -2.08539, -1.19207, 0.333333, 1, -0.00212036, -4.5936, -1.19207, 0.4, 1, -0.00212036, -4.5936, -1.19207, 0.466667, 1, -0.00212036, -2.08539, -1.19207, 0.5, 1, -0.00212036, -1.60594, -1.19207, 0.6, 1, -0.00212036, -1.60594, -1.19207)
+tracks/3/type = "position_3d"
+tracks/3/imported = true
+tracks/3/enabled = true
+tracks/3/path = NodePath("PistolArmature/Skeleton3D:Trigger")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = PackedFloat32Array(0, 1, -0.00865462, 0.441929, 0.669482, 0.133333, 1, -0.00865462, 0.441929, 0.669482, 0.166667, 1, -0.00865462, 0.38457, 0.669482, 0.233333, 1, -0.00865462, 0.0845007, 0.669483, 0.266667, 1, -0.00865462, 0.0271425, 0.669482, 0.3, 1, -0.00865462, 0.0640122, 0.669482, 0.333333, 1, -0.00865462, 0.167864, 0.669483, 0.366667, 1, -0.00865462, 0.301208, 0.669483, 0.4, 1, -0.00865462, 0.405059, 0.669482, 0.433333, 1, -0.00865462, 0.441929, 0.669483, 0.6, 1, -0.00865462, 0.441929, 0.669482)
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("PistolArmature/Skeleton3D/Muzzle/MuzzleFlash/FlashParticles:emitting")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 0.3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [false, true]
+}
+
+[sub_resource type="Animation" id="Animation_5g4gc"]
+length = 0.001
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_fys8i"]
+_data = {
+"Fire": SubResource("Animation_05p35"),
+"RESET": SubResource("Animation_5g4gc")
+}
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_euyl2"]
+size = Vector3(10, 10, 10)
+
+[node name="Pistol" instance=ExtResource("1_e4l4g")]
+transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 0, 0, 0)
+script = ExtResource("2_35ag3")
+pistolSound = ExtResource("3_qi7fr")
+
+[node name="Skeleton3D" parent="PistolArmature" index="0"]
+bones/0/position = Vector3(1.19207, -3.13582, -0.00212148)
+bones/0/rotation = Quaternion(2.9534e-08, 0.707107, -1.81857e-07, 0.707107)
+bones/1/position = Vector3(-0.00212036, -1.60594, -1.19207)
+bones/3/position = Vector3(-0.00865462, 0.441929, 0.669482)
+
+[node name="MuzzleFlash" type="Node3D" parent="PistolArmature/Skeleton3D/Muzzle" index="0"]
+transform = Transform3D(1, 9.9476e-14, 0, -9.9476e-14, 1, 0, 0, 0, 1, 7.15256e-07, 3.5, 0)
+
+[node name="FlashParticles" type="GPUParticles3D" parent="PistolArmature/Skeleton3D/Muzzle/MuzzleFlash" index="0"]
+transform = Transform3D(1, 2.84217e-14, 0, -2.84217e-14, 1, 0, 0, 0, 1, 0, 0, 0)
+emitting = false
+amount = 5
+lifetime = 0.01
+one_shot = true
+process_material = SubResource("ParticleProcessMaterial_x72q7")
+draw_pass_1 = SubResource("QuadMesh_gqvpn")
+
+[node name="AnimationPlayer" parent="." index="1"]
+libraries = {
+"": SubResource("AnimationLibrary_fys8i")
+}
+
+[node name="RigidBody3D" type="RigidBody3D" parent="." index="2"]
+collision_layer = 4
+collision_mask = 4
+lock_rotation = true
+freeze = true
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D" index="0"]
+shape = SubResource("BoxShape3D_euyl2")
+
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="." index="3"]
+bus = &"SFX"

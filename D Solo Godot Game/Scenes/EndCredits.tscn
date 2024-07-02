@@ -1,0 +1,135 @@
+[gd_scene load_steps=8 format=3 uid="uid://1bmlal62necb"]
+
+[ext_resource type="FontFile" uid="uid://cyjdhnnvrn8e1" path="res://Assets/PoetsenOne-Regular.ttf" id="1_3eqby"]
+[ext_resource type="Script" path="res://Scripts/EndCredits.cs" id="1_a6cq0"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_y3xl8"]
+font = ExtResource("1_3eqby")
+font_size = 36
+
+[sub_resource type="LabelSettings" id="LabelSettings_56onv"]
+line_spacing = 12.0
+font = ExtResource("1_3eqby")
+font_size = 20
+
+[sub_resource type="Animation" id="Animation_td4ex"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("CanvasLayer2/Control:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 650)]
+}
+
+[sub_resource type="Animation" id="Animation_tlb3h"]
+resource_name = "Scroll"
+length = 10.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("CanvasLayer2/Control:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 10),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(0, 650), Vector2(0, -850)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_1vcox"]
+_data = {
+"RESET": SubResource("Animation_td4ex"),
+"Scroll": SubResource("Animation_tlb3h")
+}
+
+[node name="EndCredits" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_a6cq0")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+layer = 0
+
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer"]
+show_behind_parent = true
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+
+[node name="CanvasLayer2" type="CanvasLayer" parent="."]
+
+[node name="Control" type="Control" parent="CanvasLayer2"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = 650.0
+offset_bottom = 650.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="CanvasLayer2/Control"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -254.0
+offset_right = 254.0
+offset_bottom = 890.0
+grow_horizontal = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer2/Control/MarginContainer"]
+layout_mode = 2
+alignment = 1
+
+[node name="CreditsLabel" type="Label" parent="CanvasLayer2/Control/MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "MURDER DAVE
+
+"
+label_settings = SubResource("LabelSettings_y3xl8")
+horizontal_alignment = 1
+autowrap_mode = 3
+
+[node name="CreditsLabel2" type="Label" parent="CanvasLayer2/Control/MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Game by Devon Treit.
+
+Sprites, models and textures for Dave, and smoke particles from Kenney.nl
+
+Pistol model and texture from Quaternius.com
+
+Character and furniture models and textures from Polygon.
+
+Additional textures from AmbientCG.com and FreeStockTextures.com
+
+Sounds and music from FreeSound.org
+
+
+
+Thank you for playing my dumb game.
+"
+label_settings = SubResource("LabelSettings_56onv")
+horizontal_alignment = 1
+autowrap_mode = 3
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_1vcox")
+}
+
+[connection signal="animation_finished" from="AnimationPlayer" to="." method="AnimationFinished"]

@@ -1,0 +1,14 @@
+[gd_resource type="StandardMaterial3D" load_steps=4 format=3 uid="uid://cwn8qjtyhoy4o"]
+
+[ext_resource type="Texture2D" uid="uid://hgc8n4iusnpc" path="res://Assets/WoodFloor/WoodFloor007_1K-PNG_Color.png" id="1_rqyn3"]
+[ext_resource type="Texture2D" uid="uid://clqrthvawckcm" path="res://Assets/WoodFloor/WoodFloor007_1K-PNG_NormalDX.png" id="2_763py"]
+[ext_resource type="Texture2D" uid="uid://d24ccvwi3oqqp" path="res://Assets/WoodFloor/WoodFloor007_1K-PNG_Roughness.png" id="3_q07yc"]
+
+[resource]
+albedo_color = Color(0.498039, 0.498039, 0.498039, 0.498039)
+albedo_texture = ExtResource("1_rqyn3")
+roughness_texture = ExtResource("3_q07yc")
+normal_texture = ExtResource("2_763py")
+uv1_scale = Vector3(0.25, 0.25, 0.25)
+uv1_triplanar = true
+uv2_triplanar = true

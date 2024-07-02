@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://c47mh0w5rsmmh"]
+
+[ext_resource type="Texture2D" uid="uid://bkuopbb8nt8yy" path="res://Assets/cable.png" id="1_nq8mj"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_6yptl"]
+
+[node name="Cable" type="RigidBody3D"]
+collision_layer = 0
+collision_mask = 0
+freeze = true
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("BoxShape3D_6yptl")
+
+[node name="Decal" type="Decal" parent="."]
+size = Vector3(1, 1, 0.1)
+texture_albedo = ExtResource("1_nq8mj")

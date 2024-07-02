@@ -1,0 +1,2022 @@
+[gd_scene load_steps=65 format=3 uid="uid://d11a2qmhwrr3t"]
+
+[ext_resource type="PackedScene" uid="uid://cbtt4mrv8tutf" path="res://Scenes/Player.tscn" id="1_40p0d"]
+[ext_resource type="PackedScene" uid="uid://d2qylbsmpiu5b" path="res://Scenes/Dave.tscn" id="2_iwpsf"]
+[ext_resource type="PackedScene" uid="uid://coam2yptd6r1t" path="res://Scenes/Door.tscn" id="3_b88qh"]
+[ext_resource type="PackedScene" uid="uid://cy3esqdmjl7qd" path="res://Scenes/Lamp.tscn" id="6_a7xj0"]
+[ext_resource type="PackedScene" uid="uid://dpnwmh8iql62n" path="res://Scenes/Box.tscn" id="7_qspsy"]
+[ext_resource type="PackedScene" uid="uid://dld0vx1geglx" path="res://Scenes/StaticWall.tscn" id="10_kmire"]
+[ext_resource type="Material" uid="uid://fbfnkhai3qmc" path="res://Materials/WhiteGlowMat.tres" id="10_orh8i"]
+[ext_resource type="PackedScene" uid="uid://d3lujwjw08hm5" path="res://Scenes/StaticPillar.tscn" id="11_1cxi8"]
+[ext_resource type="PackedScene" uid="uid://dn7nhka5d0i0k" path="res://Scenes/StaticHalfPillar.tscn" id="12_black"]
+[ext_resource type="PackedScene" uid="uid://cxc700u0qdavh" path="res://Scenes/PressurePlate.tscn" id="12_vdhs4"]
+[ext_resource type="PackedScene" uid="uid://8l33x4lt64e0" path="res://Scenes/StaticQuarterWall.tscn" id="13_k8lae"]
+[ext_resource type="PackedScene" uid="uid://b042ofw14r0oj" path="res://Scenes/StaticFloor.tscn" id="14_0w4t2"]
+[ext_resource type="PackedScene" uid="uid://bsekppq87ha0" path="res://Scenes/StaticDoorFrame.tscn" id="14_q5h4x"]
+[ext_resource type="PackedScene" uid="uid://ddq3xpym3ws0" path="res://Scenes/Key.tscn" id="15_0nfu8"]
+[ext_resource type="PackedScene" uid="uid://doax3x07tnnhv" path="res://Scenes/SmallLamp.tscn" id="15_xtnlc"]
+[ext_resource type="PackedScene" uid="uid://dclbd28iagwtx" path="res://Scenes/StaticShorterWall.tscn" id="16_gmbux"]
+[ext_resource type="Material" uid="uid://dvjdugfi551ey" path="res://Materials/BlueGlowOutlineMat.tres" id="16_soduc"]
+[ext_resource type="PackedScene" uid="uid://v1md2t0pj2my" path="res://Scenes/StaticBeam.tscn" id="17_klqas"]
+[ext_resource type="PackedScene" uid="uid://bgu4qvk7mg3h4" path="res://Scenes/StaticHalfWall.tscn" id="18_bth38"]
+[ext_resource type="Material" uid="uid://cwn8qjtyhoy4o" path="res://Materials/FloorMat.tres" id="18_e3vyq"]
+[ext_resource type="PackedScene" uid="uid://b82xs1y1t10vh" path="res://Scenes/StaticPropNightstand.tscn" id="20_3ihqc"]
+[ext_resource type="PackedScene" uid="uid://b5q3hpdlo70k" path="res://Scenes/StaticPropLight.tscn" id="20_tlfck"]
+[ext_resource type="PackedScene" uid="uid://byma82pkcnfug" path="res://Scenes/StaticWindow.tscn" id="22_qgjvl"]
+[ext_resource type="PackedScene" uid="uid://cyyydsq66pshh" path="res://Scenes/StaticShortHalfWall.tscn" id="23_u61pa"]
+[ext_resource type="Material" uid="uid://bp04d5r8exgj3" path="res://Materials/RedGlowOutlineMat.tres" id="25_lylg3"]
+[ext_resource type="Material" uid="uid://dmv7nrc656pk8" path="res://Materials/GreenGlowOutlineMat.tres" id="26_o44g7"]
+[ext_resource type="PackedScene" uid="uid://csoj2uh0nxqo7" path="res://Scenes/Television.tscn" id="27_ya4gu"]
+[ext_resource type="Material" uid="uid://b3c4y34fqixx" path="res://Materials/BlueDarkOutlineMat.tres" id="28_2rspx"]
+[ext_resource type="Material" uid="uid://cowxborkc7kvs" path="res://Materials/GreenDarkOutlineMat.tres" id="28_6hceu"]
+[ext_resource type="Material" uid="uid://5kfvscoib2lm" path="res://Materials/RedDarkOutlineMat.tres" id="30_166bq"]
+[ext_resource type="PackedScene" uid="uid://cy4elkra1daw7" path="res://Scenes/StaticHoleFloor.tscn" id="31_gfjy1"]
+[ext_resource type="PackedScene" uid="uid://boax2bu60u3fx" path="res://Scenes/StaticShortQuarterWall.tscn" id="31_vcvl3"]
+[ext_resource type="Material" uid="uid://cx3tjxi5rsfvg" path="res://Materials/WallMat.tres" id="32_d2j2w"]
+[ext_resource type="PackedScene" uid="uid://bag3823x1o544" path="res://Scenes/MovingPlatform.tscn" id="32_eguhh"]
+[ext_resource type="PackedScene" uid="uid://cjypfak33e42q" path="res://Scenes/StaticPropCouch1.tscn" id="32_ha7md"]
+[ext_resource type="PackedScene" uid="uid://dkicpsheryhhd" path="res://Scenes/StaticPropBed1.tscn" id="36_0fwk5"]
+[ext_resource type="PackedScene" uid="uid://dtjhn4hvjg8dy" path="res://Scenes/Teleporter.tscn" id="37_y4j2a"]
+[ext_resource type="PackedScene" uid="uid://dporkcvqki80e" path="res://Scenes/StaticPropBathroomSink.tscn" id="38_x5bsa"]
+[ext_resource type="PackedScene" uid="uid://c5p6gtb4pe6fa" path="res://Scenes/StaticPropBathTub.tscn" id="39_3v6rg"]
+[ext_resource type="PackedScene" uid="uid://djj78beqhr6k8" path="res://Scenes/StaticPropBathroomRug.tscn" id="40_o8yk8"]
+[ext_resource type="PackedScene" uid="uid://dk8gbgha43yic" path="res://Scenes/StaticPropToilet.tscn" id="41_ii6sb"]
+[ext_resource type="PackedScene" uid="uid://dc0cdtj0vuru1" path="res://Scenes/StaticPropBathroomMirror.tscn" id="42_852xj"]
+[ext_resource type="PackedScene" uid="uid://dkipug8g17ugb" path="res://Scenes/StaticPropDesk.tscn" id="44_tvp8y"]
+[ext_resource type="PackedScene" uid="uid://budkp5q51e3ij" path="res://Scenes/StaticPropDeskChair.tscn" id="45_tww2f"]
+[ext_resource type="PackedScene" uid="uid://hfpmsxpsgwhp" path="res://Scenes/StaticCeiling.tscn" id="46_n1p18"]
+[ext_resource type="PackedScene" uid="uid://bwvw8jwm063w3" path="res://Scenes/StaticPropBookshelf.tscn" id="47_cet34"]
+[ext_resource type="PackedScene" uid="uid://cqlbwjcwr66s0" path="res://Scenes/StaticPropKitchenSink.tscn" id="48_r4ioq"]
+[ext_resource type="PackedScene" uid="uid://niuu6kqvve5m" path="res://Scenes/ChairItem.tscn" id="48_rkd8s"]
+[ext_resource type="PackedScene" uid="uid://bo0kojqrufkuh" path="res://Scenes/StaticPropKitchenCounter.tscn" id="49_7yw8j"]
+[ext_resource type="Material" uid="uid://ba3a2vv1h31se" path="res://Materials/CeilingMat.tres" id="50_gdijt"]
+[ext_resource type="PackedScene" uid="uid://qq7bo661qaw3" path="res://Scenes/StaticPropKitchenCounterCorner.tscn" id="50_hr5fg"]
+[ext_resource type="PackedScene" uid="uid://djvppnpbwgsch" path="res://Scenes/StaticPropDishwasher.tscn" id="51_dpjs7"]
+[ext_resource type="PackedScene" uid="uid://de5rtw6pn7p83" path="res://Scenes/StaticPropChair.tscn" id="51_oto85"]
+[ext_resource type="PackedScene" uid="uid://d3n4t3r14wf46" path="res://Scenes/StaticPropOven.tscn" id="52_jq1ex"]
+[ext_resource type="PackedScene" uid="uid://bocrxm6eu6f6v" path="res://Scenes/StaticPropKitchenCabinet.tscn" id="53_sep68"]
+[ext_resource type="PackedScene" uid="uid://cegpbaxk2eyh7" path="res://Scenes/StaticPropComputer.tscn" id="54_2ad7m"]
+[ext_resource type="PackedScene" uid="uid://t3svo4xvn747" path="res://Scenes/StaticPropTable.tscn" id="55_1lcec"]
+[ext_resource type="PackedScene" uid="uid://dvgjxa7g8bvhn" path="res://Scenes/StaticPropFlatscreen.tscn" id="57_3etkc"]
+[ext_resource type="PackedScene" uid="uid://cn4nfwcydvi70" path="res://Scenes/StaticShorterPillar.tscn" id="59_stvty"]
+[ext_resource type="PackedScene" uid="uid://bwbfx3l88dp15" path="res://Scenes/StaticShorterHalfPillar.tscn" id="60_1vm3o"]
+[ext_resource type="PackedScene" uid="uid://kljko4v4xatv" path="res://Scenes/StaticShorterDoorFrame.tscn" id="61_58s7x"]
+[ext_resource type="PackedScene" uid="uid://cgilpy1k5t21d" path="res://Scenes/StaticPropWorkShelf.tscn" id="63_i1bfs"]
+[ext_resource type="PackedScene" uid="uid://br17s85vdn3vg" path="res://Scenes/StaticPropPlant.tscn" id="63_sqip0"]
+
+[sub_resource type="Environment" id="Environment_6hph7"]
+glow_enabled = true
+
+[node name="Game" type="Node3D"]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_6hph7")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.866025, 0.5, 0, -0.5, 0.866025, 0, 0, 0)
+
+[node name="Player" parent="." node_paths=PackedStringArray("dave") instance=ExtResource("1_40p0d")]
+transform = Transform3D(-1, 0, -2.53518e-06, 0, 1, 0, 2.53518e-06, 0, -1, 0, 1, -5.75)
+mouseSensitivity = 0.25
+dave = NodePath("../Dave")
+
+[node name="Dave" parent="." instance=ExtResource("2_iwpsf")]
+transform = Transform3D(0.01, 0, 2.38419e-09, 0, 0.01, 0, -2.38419e-09, 0, 0.01, 4.07673, -0.281919, 96.1867)
+
+[node name="Puzzle 1" type="Node3D" parent="."]
+
+[node name="StaticFloor" parent="Puzzle 1" instance=ExtResource("14_0w4t2")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 5, -0.25, 5)
+
+[node name="StaticFloor2" parent="Puzzle 1" instance=ExtResource("14_0w4t2")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 5, -0.25, 0)
+
+[node name="StaticFloor6" parent="Puzzle 1" instance=ExtResource("14_0w4t2")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 10, -0.25, 0)
+
+[node name="StaticFloor3" parent="Puzzle 1" instance=ExtResource("14_0w4t2")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, -0.25, 0)
+
+[node name="StaticFloor4" parent="Puzzle 1" instance=ExtResource("14_0w4t2")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, -0.25, -5)
+
+[node name="StaticFloor5" parent="Puzzle 1" instance=ExtResource("14_0w4t2")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 5, -0.25, -5)
+
+[node name="StaticFloor11" parent="Puzzle 1" instance=ExtResource("14_0w4t2")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 5, -0.25, -10)
+
+[node name="StaticWall" parent="Puzzle 1" instance=ExtResource("10_kmire")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.75, 2.5, 5)
+
+[node name="StaticWall2" parent="Puzzle 1" instance=ExtResource("10_kmire")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.25, 2.5, 5)
+
+[node name="StaticWall4" parent="Puzzle 1" instance=ExtResource("10_kmire")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.75, 2.5, 0)
+
+[node name="StaticWall3" parent="Puzzle 1" instance=ExtResource("10_kmire")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 2.5, 2.75)
+
+[node name="StaticWall5" parent="Puzzle 1" instance=ExtResource("10_kmire")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.75, 2.5, -5)
+
+[node name="StaticWall6" parent="Puzzle 1" instance=ExtResource("10_kmire")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.25, 2.5, -5)
+
+[node name="StaticWall11" parent="Puzzle 1" instance=ExtResource("10_kmire")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.25, 2.5, -10)
+
+[node name="StaticWall12" parent="Puzzle 1" instance=ExtResource("10_kmire")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.75, 2.5, -10)
+
+[node name="StaticWall7" parent="Puzzle 1" instance=ExtResource("10_kmire")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 5, 2.5, 7.75)
+
+[node name="StaticWall17" parent="Puzzle 1" instance=ExtResource("10_kmire")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 10, 2.5, 2.75)
+
+[node name="StaticWall18" parent="Puzzle 1" instance=ExtResource("10_kmire")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 10, 2.5, -2)
+
+[node name="StaticWall8" parent="Puzzle 1" instance=ExtResource("10_kmire")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.25, 2.5, 0)
+
+[node name="StaticWall9" parent="Puzzle 1" instance=ExtResource("10_kmire")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.25, 2.5, -5)
+
+[node name="StaticWall10" parent="Puzzle 1" instance=ExtResource("10_kmire")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 2.5, -7.75)
+
+[node name="StaticQuarterWall" parent="Puzzle 1" instance=ExtResource("13_k8lae")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 3.625, 2.5, -2)
+
+[node name="StaticQuarterWall2" parent="Puzzle 1" instance=ExtResource("13_k8lae")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 6.375, 2.5, -2)
+
+[node name="StaticQuarterWall3" parent="Puzzle 1" instance=ExtResource("13_k8lae")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 6.375, 2.5, -7.75)
+
+[node name="StaticQuarterWall4" parent="Puzzle 1" instance=ExtResource("13_k8lae")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 3.625, 2.5, -7.75)
+
+[node name="StaticPillar" parent="Puzzle 1" instance=ExtResource("11_1cxi8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.75, 2.5, -2.25)
+
+[node name="StaticHalfPillar" parent="Puzzle 1" instance=ExtResource("12_black")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 2.75, 2.5, -1.875)
+
+[node name="StaticDoorFrame" parent="Puzzle 1" instance=ExtResource("14_q5h4x")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 5, 3.75, -2)
+
+[node name="StaticQuarterWall9" parent="Puzzle 1" instance=ExtResource("13_k8lae")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 5.125, 2.5, 2.75)
+
+[node name="StaticQuarterWall10" parent="Puzzle 1" instance=ExtResource("13_k8lae")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 6.375, 2.5, 2.75)
+
+[node name="StaticDoorFrame5" parent="Puzzle 1" instance=ExtResource("14_q5h4x")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 3.75, 3.75, 2.75)
+
+[node name="StaticDoorFrame2" parent="Puzzle 1" instance=ExtResource("14_q5h4x")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 5, 3.75, -7.75)
+
+[node name="Blue Door" parent="Puzzle 1" instance=ExtResource("3_b88qh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, -2)
+inactiveMaterial = ExtResource("28_2rspx")
+activeMaterial = ExtResource("16_soduc")
+isPlayerInteractable = false
+
+[node name="Blue Door2" parent="Puzzle 1" instance=ExtResource("3_b88qh")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 5, 0, -7.75)
+doesDoorStartOpen = true
+inactiveMaterial = ExtResource("28_2rspx")
+activeMaterial = ExtResource("16_soduc")
+isPlayerInteractable = false
+
+[node name="Blue PressurePlate" parent="Puzzle 1" node_paths=PackedStringArray("receivers") instance=ExtResource("12_vdhs4")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 3.5, 0, 5)
+inactiveMaterial = ExtResource("28_2rspx")
+activeMaterial = ExtResource("16_soduc")
+receivers = [NodePath("../Blue Door"), NodePath("../Blue Door2")]
+
+[node name="Blue SmallLamp" parent="Puzzle 1" node_paths=PackedStringArray("interactableToSpawn") instance=ExtResource("15_xtnlc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.375, 0.917841, -6.75)
+inactiveMaterial = ExtResource("28_2rspx")
+activeMaterial = ExtResource("16_soduc")
+interactableToSpawn = NodePath("../Blue Box")
+
+[node name="Blue Box" parent="Puzzle 1" instance=ExtResource("7_qspsy")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 1.375, -1.25)
+inactiveMaterial = ExtResource("28_2rspx")
+activeMaterial = ExtResource("16_soduc")
+isBroken = true
+
+[node name="StaticQuarterWall5" parent="Puzzle 1" instance=ExtResource("13_k8lae")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 6.375, 2.5, -12.75)
+
+[node name="StaticQuarterWall6" parent="Puzzle 1" instance=ExtResource("13_k8lae")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 3.625, 2.5, -12.75)
+
+[node name="StaticDoorFrame3" parent="Puzzle 1" instance=ExtResource("14_q5h4x")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 5, 3.75, -12.75)
+
+[node name="StaticPillar2" parent="Puzzle 1" instance=ExtResource("11_1cxi8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.75, 2.5, -12.75)
+material_override = ExtResource("32_d2j2w")
+
+[node name="StaticPillar3" parent="Puzzle 1" instance=ExtResource("11_1cxi8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.25, 2.5, -12.75)
+material_override = ExtResource("32_d2j2w")
+
+[node name="StaticPillar4" parent="Puzzle 1" instance=ExtResource("11_1cxi8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.25, 2.5, -2.25)
+material_override = ExtResource("32_d2j2w")
+
+[node name="StaticBeam" parent="Puzzle 1" instance=ExtResource("17_klqas")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 5, 5.25, -12.75)
+material_override = ExtResource("50_gdijt")
+
+[node name="StaticBeam2" parent="Puzzle 1" instance=ExtResource("17_klqas")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 5, -0.25, -12.75)
+material_override = ExtResource("18_e3vyq")
+
+[node name="Door" parent="Puzzle 1" instance=ExtResource("3_b88qh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, -12.75)
+
+[node name="Door3" parent="Puzzle 1" node_paths=PackedStringArray("mesh", "outlines") instance=ExtResource("3_b88qh")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 3.75, 0, 2.75)
+mesh = NodePath("../Door/Hinge/DoorMesh")
+outlines = [NodePath("../Door/Hinge/DoorMesh/DoorOutline"), NodePath("../Door/Hinge/DoorMesh/HandleBackMesh/HandleBackOutline"), NodePath("../Door/Hinge/DoorMesh/KnobBackMesh/KnobBackOutline"), NodePath("../Door/Hinge/DoorMesh/HandleFrontMesh/HandleFrontOutline"), NodePath("../Door/Hinge/DoorMesh/KnobFrontMesh/KnobFrontOutline")]
+
+[node name="StaticFloor13" parent="Puzzle 1" instance=ExtResource("14_0w4t2")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 5, -0.25, -21)
+
+[node name="StaticWall13" parent="Puzzle 1" instance=ExtResource("10_kmire")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.25, 2.5, -21)
+
+[node name="StaticWall14" parent="Puzzle 1" instance=ExtResource("10_kmire")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.75, 2.5, -21)
+
+[node name="StaticFloor15" parent="Puzzle 1" instance=ExtResource("14_0w4t2")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 5, -0.25, -15.5)
+
+[node name="StaticWall15" parent="Puzzle 1" instance=ExtResource("10_kmire")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.25, 2.5, -15.5)
+
+[node name="StaticWall16" parent="Puzzle 1" instance=ExtResource("10_kmire")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.75, 2.5, -15.5)
+
+[node name="StaticQuarterWall7" parent="Puzzle 1" instance=ExtResource("13_k8lae")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 6.375, 2.5, -23.75)
+
+[node name="StaticQuarterWall8" parent="Puzzle 1" instance=ExtResource("13_k8lae")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 3.625, 2.5, -23.75)
+
+[node name="StaticDoorFrame4" parent="Puzzle 1" instance=ExtResource("14_q5h4x")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 5, 3.75, -23.75)
+
+[node name="White StaticPillar3" parent="Puzzle 1" instance=ExtResource("11_1cxi8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.75, 2.5, -23.75)
+material_override = ExtResource("32_d2j2w")
+
+[node name="White StaticPillar4" parent="Puzzle 1" instance=ExtResource("11_1cxi8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.25, 2.5, -23.75)
+material_override = ExtResource("32_d2j2w")
+
+[node name="White StaticBeam3" parent="Puzzle 1" instance=ExtResource("17_klqas")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 5, 5.25, -23.75)
+material_override = ExtResource("50_gdijt")
+
+[node name="White StaticBeam4" parent="Puzzle 1" instance=ExtResource("17_klqas")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 5, -0.25, -23.75)
+material_override = ExtResource("18_e3vyq")
+
+[node name="White StaticPillar5" parent="Puzzle 1" instance=ExtResource("11_1cxi8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.75, 2.5, -18.25)
+material_override = ExtResource("32_d2j2w")
+
+[node name="White StaticPillar6" parent="Puzzle 1" instance=ExtResource("11_1cxi8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.25, 2.5, -18.25)
+material_override = ExtResource("32_d2j2w")
+
+[node name="White StaticBeam5" parent="Puzzle 1" instance=ExtResource("17_klqas")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 5, 5.25, -18.25)
+material_override = ExtResource("50_gdijt")
+
+[node name="White StaticBeam6" parent="Puzzle 1" instance=ExtResource("17_klqas")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 5, -0.25, -18.25)
+material_override = ExtResource("18_e3vyq")
+
+[node name="Door2" parent="Puzzle 1" instance=ExtResource("3_b88qh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, -23.75)
+isPlayerInteractable = false
+
+[node name="StaticPropBed1" parent="Puzzle 1" instance=ExtResource("36_0fwk5")]
+transform = Transform3D(1, 0, 1.74846e-07, 0, 1, 0, -1.74846e-07, 0, 1, 0, 0, -6)
+
+[node name="StaticPropNightstand" parent="Puzzle 1" instance=ExtResource("20_3ihqc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.375, 0, -6.75)
+
+[node name="StaticPropLight" parent="Puzzle 1" instance=ExtResource("20_tlfck")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.25, 5, -3)
+
+[node name="StaticPropLight3" parent="Puzzle 1" instance=ExtResource("20_tlfck")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 5, 0.25)
+
+[node name="StaticPropLight2" parent="Puzzle 1" instance=ExtResource("20_tlfck")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 5, 5)
+
+[node name="StaticCeiling" parent="Puzzle 1" instance=ExtResource("46_n1p18")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5.25, 0)
+material_override = ExtResource("50_gdijt")
+
+[node name="StaticCeiling2" parent="Puzzle 1" instance=ExtResource("46_n1p18")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5.25, -5)
+material_override = ExtResource("50_gdijt")
+
+[node name="StaticCeiling3" parent="Puzzle 1" instance=ExtResource("46_n1p18")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 5.25, 0)
+material_override = ExtResource("50_gdijt")
+
+[node name="StaticCeiling9" parent="Puzzle 1" instance=ExtResource("46_n1p18")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 5.25, 0)
+material_override = ExtResource("50_gdijt")
+
+[node name="StaticCeiling5" parent="Puzzle 1" instance=ExtResource("46_n1p18")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 5.25, 5)
+material_override = ExtResource("50_gdijt")
+
+[node name="StaticCeiling4" parent="Puzzle 1" instance=ExtResource("46_n1p18")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 5.25, -5)
+material_override = ExtResource("50_gdijt")
+
+[node name="StaticCeiling6" parent="Puzzle 1" instance=ExtResource("46_n1p18")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 5.25, -15.5)
+material_override = ExtResource("50_gdijt")
+
+[node name="StaticCeiling7" parent="Puzzle 1" instance=ExtResource("46_n1p18")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 5.25, -10)
+material_override = ExtResource("50_gdijt")
+
+[node name="StaticCeiling8" parent="Puzzle 1" instance=ExtResource("46_n1p18")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 5.25, -21)
+material_override = ExtResource("50_gdijt")
+
+[node name="StaticPropBathroomSink" parent="Puzzle 1" instance=ExtResource("38_x5bsa")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 3.5, 0, 6)
+
+[node name="StaticPropBathTub" parent="Puzzle 1" instance=ExtResource("39_3v6rg")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 6.25, 0, 6.125)
+
+[node name="StaticPropBathroomRug" parent="Puzzle 1" instance=ExtResource("40_o8yk8")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 5.125, 0, 6.125)
+
+[node name="StaticPropToilet" parent="Puzzle 1" instance=ExtResource("41_ii6sb")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 3.5, 0, 7)
+
+[node name="StaticPropBathroomMirror" parent="Puzzle 1" instance=ExtResource("42_852xj")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 3, 2, 6)
+
+[node name="StaticPropBookshelf" parent="Puzzle 1" instance=ExtResource("47_cet34")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -1.375, 0, 2.25)
+
+[node name="StaticPropDesk" parent="Puzzle 1" instance=ExtResource("44_tvp8y")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, 0, 2)
+
+[node name="StaticPropDeskChair" parent="Puzzle 1" instance=ExtResource("45_tww2f")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, 0, 1.4)
+
+[node name="StaticHalfPillar2" parent="Puzzle 1" instance=ExtResource("12_black")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 7.25, 2.5, -1.875)
+
+[node name="StaticPropKitchenSink" parent="Puzzle 1" instance=ExtResource("48_r4ioq")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 12, 0, -0.25)
+
+[node name="StaticPropKitchenCounter" parent="Puzzle 1" instance=ExtResource("49_7yw8j")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 12, 0, 0.75)
+
+[node name="StaticPropKitchenCounter2" parent="Puzzle 1" instance=ExtResource("49_7yw8j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0, -1.25)
+
+[node name="StaticPropKitchenCounterCorner" parent="Puzzle 1" instance=ExtResource("50_hr5fg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0, -1.25)
+
+[node name="StaticPropDishwasher" parent="Puzzle 1" instance=ExtResource("51_dpjs7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11, 0, -1.25)
+
+[node name="StaticPropOven" parent="Puzzle 1" instance=ExtResource("52_jq1ex")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 12, 0, 1.75)
+
+[node name="StaticPropKitchenCabinet" parent="Puzzle 1" instance=ExtResource("53_sep68")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 12, 1.75, 1.76)
+
+[node name="StaticPropKitchenCabinet2" parent="Puzzle 1" instance=ExtResource("53_sep68")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 12, 1.75, 0.76)
+
+[node name="StaticPropKitchenCabinet4" parent="Puzzle 1" instance=ExtResource("53_sep68")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11, 1.75, -1.24)
+
+[node name="StaticPropKitchenCabinet5" parent="Puzzle 1" instance=ExtResource("53_sep68")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 1.75, -1.24)
+
+[node name="StaticPropComputer" parent="Puzzle 1" instance=ExtResource("54_2ad7m")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0.5, 0.9, 2.25)
+
+[node name="StaticPropLight4" parent="Puzzle 1" instance=ExtResource("20_tlfck")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 5, -18.25)
+
+[node name="StaticPropLight5" parent="Puzzle 1" instance=ExtResource("20_tlfck")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 5, -10.25)
+
+[node name="StaticPropLight6" parent="Puzzle 1" instance=ExtResource("20_tlfck")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 5, -4.75)
+
+[node name="Puzzle 2" type="Node3D" parent="."]
+
+[node name="StaticFloor" parent="Puzzle 2" instance=ExtResource("14_0w4t2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 6.5, 24)
+
+[node name="StaticFloor3" parent="Puzzle 2" instance=ExtResource("14_0w4t2")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, -0.25, 24)
+
+[node name="StaticFloor5" parent="Puzzle 2" instance=ExtResource("14_0w4t2")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -5, -0.25, 14)
+
+[node name="StaticFloor6" parent="Puzzle 2" instance=ExtResource("14_0w4t2")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -5, 6.5, 19)
+
+[node name="StaticFloor7" parent="Puzzle 2" instance=ExtResource("14_0w4t2")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, -0.25, 19)
+
+[node name="StaticFloor8" parent="Puzzle 2" instance=ExtResource("14_0w4t2")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, -0.25, 14)
+
+[node name="StaticFloor14" parent="Puzzle 2" instance=ExtResource("14_0w4t2")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 5.5, 1.5, 19)
+
+[node name="StaticFloor15" parent="Puzzle 2" instance=ExtResource("14_0w4t2")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 5.5, 1.5, 24)
+
+[node name="StaticFloor19" parent="Puzzle 2" instance=ExtResource("14_0w4t2")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 5.5, 1.5, 14)
+
+[node name="StaticWall" parent="Puzzle 2" instance=ExtResource("10_kmire")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.25, 4.25, 14)
+
+[node name="StaticWall4" parent="Puzzle 2" instance=ExtResource("10_kmire")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.25, 4.25, 19)
+
+[node name="StaticWall5" parent="Puzzle 2" instance=ExtResource("10_kmire")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.25, 4.25, 24)
+
+[node name="StaticWall6" parent="Puzzle 2" instance=ExtResource("10_kmire")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 2.5, 11.25)
+
+[node name="StaticWall7" parent="Puzzle 2" instance=ExtResource("10_kmire")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -5, 2.5, 11.25)
+
+[node name="StaticWall8" parent="Puzzle 2" instance=ExtResource("10_kmire")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.75, 14)
+
+[node name="StaticWall9" parent="Puzzle 2" instance=ExtResource("10_kmire")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.75, 4.25, 24)
+
+[node name="StaticWall10" parent="Puzzle 2" instance=ExtResource("10_kmire")]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, -7.75, 2.5, 19)
+
+[node name="StaticWall11" parent="Puzzle 2" instance=ExtResource("10_kmire")]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, -7.75, 2.5, 14)
+
+[node name="StaticWall12" parent="Puzzle 2" instance=ExtResource("10_kmire")]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, -7.75, 2.5, 24)
+material_override = ExtResource("18_e3vyq")
+
+[node name="StaticWall13" parent="Puzzle 2" instance=ExtResource("10_kmire")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -5, 2.5, 26.75)
+material_override = ExtResource("18_e3vyq")
+
+[node name="StaticHalfWall" parent="Puzzle 2" instance=ExtResource("18_bth38")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 2.75, 4.25, 17.75)
+
+[node name="StaticHalfWall2" parent="Puzzle 2" instance=ExtResource("18_bth38")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 2.75, 4.25, 20.25)
+
+[node name="StaticHalfWall3" parent="Puzzle 2" instance=ExtResource("18_bth38")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 4.25, 4.25, 11.75)
+
+[node name="StaticHalfWall4" parent="Puzzle 2" instance=ExtResource("18_bth38")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 5.75, 4.25, 21.25)
+
+[node name="StaticHalfWall5" parent="Puzzle 2" instance=ExtResource("18_bth38")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 4.25, 4.25, 18.75)
+
+[node name="StaticQuarterWall" parent="Puzzle 2" instance=ExtResource("13_k8lae")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.25, 4.25, 17.875)
+
+[node name="StaticPillar" parent="Puzzle 2" instance=ExtResource("11_1cxi8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.75, 4.25, 11.75)
+
+[node name="StaticPillar2" parent="Puzzle 2" instance=ExtResource("11_1cxi8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.75, 4.25, 13.75)
+
+[node name="StaticPillar3" parent="Puzzle 2" instance=ExtResource("11_1cxi8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.75, 4.25, 11.75)
+
+[node name="StaticPillar4" parent="Puzzle 2" instance=ExtResource("11_1cxi8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.75, 4.25, 11.75)
+
+[node name="StaticPillar5" parent="Puzzle 2" instance=ExtResource("11_1cxi8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.25, 4.25, 11.75)
+
+[node name="StaticPillar6" parent="Puzzle 2" instance=ExtResource("11_1cxi8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.25, 4.25, 16.75)
+
+[node name="StaticPillar7" parent="Puzzle 2" instance=ExtResource("11_1cxi8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.25, 4.25, 16.75)
+
+[node name="StaticShorterPillar" parent="Puzzle 2" instance=ExtResource("59_stvty")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.25, 0.625, 16.25)
+
+[node name="StaticHalfPillar" parent="Puzzle 2" instance=ExtResource("12_black")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 5.25, 4.25, 17.125)
+
+[node name="StaticHalfPillar2" parent="Puzzle 2" instance=ExtResource("12_black")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -2.25, 3.75, 14.375)
+
+[node name="StaticShorterHalfPillar" parent="Puzzle 2" instance=ExtResource("60_1vm3o")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -2.25, 0.625, 14.375)
+
+[node name="White StaticPillar" parent="Puzzle 2" instance=ExtResource("11_1cxi8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.75, 4.25, 26.75)
+material = ExtResource("10_orh8i")
+
+[node name="White StaticPillar2" parent="Puzzle 2" instance=ExtResource("11_1cxi8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.25, 4.25, 26.75)
+material = ExtResource("10_orh8i")
+
+[node name="StaticShorterWall" parent="Puzzle 2" instance=ExtResource("16_gmbux")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.75, 0.625, 14)
+
+[node name="StaticShorterWall2" parent="Puzzle 2" instance=ExtResource("16_gmbux")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.75, 0.625, 19)
+
+[node name="StaticShorterWall3" parent="Puzzle 2" instance=ExtResource("16_gmbux")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.75, 0.625, 24)
+
+[node name="StaticShorterWall4" parent="Puzzle 2" instance=ExtResource("16_gmbux")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 6.125, 26.75)
+
+[node name="StaticShorterWall5" parent="Puzzle 2" instance=ExtResource("16_gmbux")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 0.625, 14)
+
+[node name="StaticWall14" parent="Puzzle 2" instance=ExtResource("10_kmire")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.75, 21.75)
+
+[node name="StaticShorterWall12" parent="Puzzle 2" instance=ExtResource("16_gmbux")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 0.625, 21.75)
+
+[node name="StaticWall16" parent="Puzzle 2" instance=ExtResource("10_kmire")]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, -2.25, 3.75, 19)
+
+[node name="StaticShorterWall14" parent="Puzzle 2" instance=ExtResource("16_gmbux")]
+transform = Transform3D(1, 0, 1.06581e-14, 0, 1, 0, -1.06581e-14, 0, 1, -2.25, 0.625, 19)
+
+[node name="StaticShorterWall6" parent="Puzzle 2" instance=ExtResource("16_gmbux")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -5, 5.625, 26.75)
+material_override = ExtResource("18_e3vyq")
+
+[node name="StaticShorterWall7" parent="Puzzle 2" instance=ExtResource("16_gmbux")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -7.75, 5.625, 24)
+material_override = ExtResource("18_e3vyq")
+
+[node name="StaticShorterWall8" parent="Puzzle 2" instance=ExtResource("16_gmbux")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -7.75, 5.625, 19)
+
+[node name="StaticShorterWall9" parent="Puzzle 2" instance=ExtResource("16_gmbux")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -7.75, 5.625, 14)
+
+[node name="StaticShorterWall10" parent="Puzzle 2" instance=ExtResource("16_gmbux")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 5.625, 11.25)
+
+[node name="StaticShorterWall11" parent="Puzzle 2" instance=ExtResource("16_gmbux")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -5, 5.625, 11.25)
+
+[node name="White StaticBeam" parent="Puzzle 2" instance=ExtResource("17_klqas")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 5, 7, 26.75)
+material_override = ExtResource("10_orh8i")
+
+[node name="White StaticBeam2" parent="Puzzle 2" instance=ExtResource("17_klqas")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 5, 1.5, 26.75)
+material_override = ExtResource("18_e3vyq")
+
+[node name="StaticShortHalfWall" parent="Puzzle 2" instance=ExtResource("23_u61pa")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 4.25, 5.5, 16.25)
+
+[node name="StaticShortHalfWall2" parent="Puzzle 2" instance=ExtResource("23_u61pa")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.75, 5.5, 15.25)
+
+[node name="StaticDoorFrame" parent="Puzzle 2" instance=ExtResource("14_q5h4x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.75, 5.5, 12.75)
+
+[node name="StaticDoorFrame2" parent="Puzzle 2" instance=ExtResource("14_q5h4x")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 6.25, 5.5, 16.25)
+
+[node name="StaticDoorFrame3" parent="Puzzle 2" instance=ExtResource("14_q5h4x")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 3.75, 5.5, 21.25)
+
+[node name="StaticDoorFrame4" parent="Puzzle 2" instance=ExtResource("14_q5h4x")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 6.25, 5.5, 18.75)
+
+[node name="StaticWindow" parent="Puzzle 2" instance=ExtResource("22_qgjvl")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 4.25, 3, 16.25)
+
+[node name="StaticWindow2" parent="Puzzle 2" instance=ExtResource("22_qgjvl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.75, 3, 15.25)
+
+[node name="Blue Door" parent="Puzzle 2" instance=ExtResource("3_b88qh")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 2.75, 1.75, 12.75)
+inactiveMaterial = ExtResource("28_2rspx")
+activeMaterial = ExtResource("16_soduc")
+isPlayerInteractable = false
+
+[node name="Blue Door2" parent="Puzzle 2" instance=ExtResource("3_b88qh")]
+transform = Transform3D(1, 0, 1.74846e-07, 0, 1, 0, -1.74846e-07, 0, 1, 6.25, 1.75, 16.25)
+doesDoorStartOpen = true
+inactiveMaterial = ExtResource("28_2rspx")
+activeMaterial = ExtResource("16_soduc")
+isPlayerInteractable = false
+
+[node name="Green Door" parent="Puzzle 2" instance=ExtResource("3_b88qh")]
+transform = Transform3D(1, 0, 1.74846e-07, 0, 1, 0, -1.74846e-07, 0, 1, 6.25, 1.75, 18.75)
+inactiveMaterial = ExtResource("28_6hceu")
+activeMaterial = ExtResource("26_o44g7")
+isPlayerInteractable = false
+
+[node name="Red Door" parent="Puzzle 2" instance=ExtResource("3_b88qh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.75, 1.75, 21.25)
+requiresKey = true
+doorLabel = "red"
+inactiveMaterial = ExtResource("30_166bq")
+activeMaterial = ExtResource("25_lylg3")
+
+[node name="Blue Scale" parent="Puzzle 2" node_paths=PackedStringArray("receivers") instance=ExtResource("12_vdhs4")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -1.5, 0, 17)
+inactiveMaterial = ExtResource("28_2rspx")
+activeMaterial = ExtResource("16_soduc")
+receivers = [NodePath("../Blue Door"), NodePath("../Blue Door2")]
+
+[node name="Green Scale" parent="Puzzle 2" node_paths=PackedStringArray("receivers") instance=ExtResource("12_vdhs4")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 4, 1.75, 17.5)
+inactiveMaterial = ExtResource("28_6hceu")
+activeMaterial = ExtResource("26_o44g7")
+receivers = [NodePath("../Green Door")]
+
+[node name="Blue Lamp" parent="Puzzle 2" node_paths=PackedStringArray("interactableToSpawn") instance=ExtResource("6_a7xj0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 0, 12)
+inactiveMaterial = ExtResource("28_2rspx")
+activeMaterial = ExtResource("16_soduc")
+interactableToSpawn = NodePath("../Blue Chair")
+
+[node name="Red Lamp" parent="Puzzle 2" node_paths=PackedStringArray("interactableToSpawn") instance=ExtResource("6_a7xj0")]
+transform = Transform3D(-1, 8.74228e-08, 0, -8.74228e-08, -1, 0, 0, 0, 1, -7, 6.25, 26)
+inactiveMaterial = ExtResource("30_166bq")
+activeMaterial = ExtResource("25_lylg3")
+interactableToSpawn = NodePath("../Red Key")
+
+[node name="Blue Chair" parent="Puzzle 2" instance=ExtResource("48_rkd8s")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0.5, 12)
+inactiveMaterial = ExtResource("28_2rspx")
+activeMaterial = ExtResource("16_soduc")
+isBroken = true
+
+[node name="Green Television" parent="Puzzle 2" instance=ExtResource("27_ya4gu")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -5, 6, 24)
+inactiveMaterial = ExtResource("28_6hceu")
+activeMaterial = ExtResource("26_o44g7")
+
+[node name="Red Key" parent="Puzzle 2" instance=ExtResource("15_0nfu8")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 6.5, 2.75, 13.25)
+ThisKeyLabel = "red"
+inactiveMaterial = ExtResource("30_166bq")
+activeMaterial = ExtResource("25_lylg3")
+isBroken = true
+
+[node name="StaticQuarterWall9" parent="Puzzle 2" instance=ExtResource("13_k8lae")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 1.375, 2.5, 37.75)
+
+[node name="StaticQuarterWall10" parent="Puzzle 2" instance=ExtResource("13_k8lae")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -1.375, 2.5, 37.75)
+
+[node name="StaticDoorFrame5" parent="Puzzle 2" instance=ExtResource("14_q5h4x")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 3.75, 37.75)
+
+[node name="White StaticPillar9" parent="Puzzle 2" instance=ExtResource("11_1cxi8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.25, 2.5, 32.25)
+material_override = ExtResource("32_d2j2w")
+
+[node name="White StaticPillar10" parent="Puzzle 2" instance=ExtResource("11_1cxi8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.25, 2.5, 32.25)
+material_override = ExtResource("32_d2j2w")
+
+[node name="White StaticBeam9" parent="Puzzle 2" instance=ExtResource("17_klqas")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 5.25, 32.25)
+material_override = ExtResource("50_gdijt")
+
+[node name="White StaticBeam10" parent="Puzzle 2" instance=ExtResource("17_klqas")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, -0.25, 32.25)
+material_override = ExtResource("18_e3vyq")
+
+[node name="White StaticBeam11" parent="Puzzle 2" instance=ExtResource("17_klqas")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, -0.25, 37.75)
+material_override = ExtResource("18_e3vyq")
+
+[node name="Door3" parent="Puzzle 2" instance=ExtResource("3_b88qh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 37.75)
+isPlayerInteractable = false
+
+[node name="StaticFloor21" parent="Puzzle 2" instance=ExtResource("14_0w4t2")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, -0.25, 29.5)
+
+[node name="StaticWall17" parent="Puzzle 2" instance=ExtResource("10_kmire")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.25, 2.5, 29.5)
+
+[node name="StaticWall18" parent="Puzzle 2" instance=ExtResource("10_kmire")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.25, 2.5, 29.5)
+
+[node name="StaticFloor23" parent="Puzzle 2" instance=ExtResource("14_0w4t2")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, -0.25, 35)
+
+[node name="StaticWall19" parent="Puzzle 2" instance=ExtResource("10_kmire")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.25, 2.5, 35)
+
+[node name="StaticWall20" parent="Puzzle 2" instance=ExtResource("10_kmire")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.25, 2.5, 35)
+
+[node name="StaticQuarterWall11" parent="Puzzle 2" instance=ExtResource("13_k8lae")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 1.375, 2.5, 26.75)
+
+[node name="StaticQuarterWall12" parent="Puzzle 2" instance=ExtResource("13_k8lae")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -1.375, 2.5, 26.75)
+
+[node name="StaticDoorFrame6" parent="Puzzle 2" instance=ExtResource("14_q5h4x")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 3.75, 26.75)
+
+[node name="White StaticPillar7" parent="Puzzle 2" instance=ExtResource("11_1cxi8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.25, 2.5, 26.75)
+material_override = ExtResource("32_d2j2w")
+
+[node name="White StaticPillar13" parent="Puzzle 2" instance=ExtResource("11_1cxi8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.25, 3.75, 16.25)
+material_override = ExtResource("32_d2j2w")
+
+[node name="White StaticPillar8" parent="Puzzle 2" instance=ExtResource("11_1cxi8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.25, 2.5, 26.75)
+material_override = ExtResource("32_d2j2w")
+
+[node name="White StaticBeam7" parent="Puzzle 2" instance=ExtResource("17_klqas")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 5.25, 26.75)
+material_override = ExtResource("32_d2j2w")
+
+[node name="White StaticBeam15" parent="Puzzle 2" instance=ExtResource("17_klqas")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 2.75, 1.5, 14)
+material_override = ExtResource("32_d2j2w")
+
+[node name="White StaticBeam16" parent="Puzzle 2" instance=ExtResource("17_klqas")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 2.75, 1.5, 19)
+material_override = ExtResource("32_d2j2w")
+
+[node name="White StaticBeam17" parent="Puzzle 2" instance=ExtResource("17_klqas")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 2.75, 1.5, 24)
+material_override = ExtResource("32_d2j2w")
+
+[node name="White StaticBeam8" parent="Puzzle 2" instance=ExtResource("17_klqas")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, -0.25, 26.75)
+material_override = ExtResource("18_e3vyq")
+
+[node name="Door4" parent="Puzzle 2" instance=ExtResource("3_b88qh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 26.75)
+
+[node name="Door7" parent="Puzzle 2" node_paths=PackedStringArray("mesh", "outlines") instance=ExtResource("3_b88qh")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -2.25, 0, 15.25)
+mesh = NodePath("../Door4/Hinge/DoorMesh")
+outlines = [NodePath("../Door4/Hinge/DoorMesh/DoorOutline"), NodePath("../Door4/Hinge/DoorMesh/HandleBackMesh/HandleBackOutline"), NodePath("../Door4/Hinge/DoorMesh/KnobBackMesh/KnobBackOutline"), NodePath("../Door4/Hinge/DoorMesh/HandleFrontMesh/HandleFrontOutline"), NodePath("../Door4/Hinge/DoorMesh/KnobFrontMesh/KnobFrontOutline")]
+
+[node name="StaticQuarterWall13" parent="Puzzle 2" instance=ExtResource("13_k8lae")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 6.375, 4.25, 37.75)
+
+[node name="StaticQuarterWall14" parent="Puzzle 2" instance=ExtResource("13_k8lae")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 3.625, 4.25, 37.75)
+
+[node name="StaticDoorFrame7" parent="Puzzle 2" instance=ExtResource("14_q5h4x")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 5, 5.5, 37.75)
+
+[node name="White StaticPillar11" parent="Puzzle 2" instance=ExtResource("11_1cxi8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.75, 4.25, 32.25)
+material_override = ExtResource("32_d2j2w")
+
+[node name="White StaticPillar12" parent="Puzzle 2" instance=ExtResource("11_1cxi8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.25, 4.25, 32.25)
+material_override = ExtResource("32_d2j2w")
+
+[node name="White StaticBeam12" parent="Puzzle 2" instance=ExtResource("17_klqas")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 5, 7, 32.25)
+material_override = ExtResource("50_gdijt")
+
+[node name="White StaticBeam13" parent="Puzzle 2" instance=ExtResource("17_klqas")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 5, 1.5, 32.25)
+material_override = ExtResource("18_e3vyq")
+
+[node name="White StaticBeam14" parent="Puzzle 2" instance=ExtResource("17_klqas")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 5, 1.5, 37.75)
+material_override = ExtResource("18_e3vyq")
+
+[node name="Door5" parent="Puzzle 2" instance=ExtResource("3_b88qh")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 5, 1.75, 37.75)
+isPlayerInteractable = false
+
+[node name="StaticFloor25" parent="Puzzle 2" instance=ExtResource("14_0w4t2")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 5, 1.5, 29.5)
+
+[node name="StaticWall21" parent="Puzzle 2" instance=ExtResource("10_kmire")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.25, 4.25, 29.5)
+
+[node name="StaticWall22" parent="Puzzle 2" instance=ExtResource("10_kmire")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.75, 4.25, 29.5)
+
+[node name="StaticFloor27" parent="Puzzle 2" instance=ExtResource("14_0w4t2")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 5, 1.5, 35)
+
+[node name="StaticWall23" parent="Puzzle 2" instance=ExtResource("10_kmire")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.25, 4.25, 35)
+
+[node name="StaticWall24" parent="Puzzle 2" instance=ExtResource("10_kmire")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.75, 4.25, 35)
+
+[node name="StaticQuarterWall15" parent="Puzzle 2" instance=ExtResource("13_k8lae")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 6.375, 4.25, 26.75)
+
+[node name="StaticQuarterWall16" parent="Puzzle 2" instance=ExtResource("13_k8lae")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 3.625, 4.25, 26.75)
+
+[node name="StaticDoorFrame8" parent="Puzzle 2" instance=ExtResource("14_q5h4x")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 5, 5.5, 26.75)
+
+[node name="Door6" parent="Puzzle 2" instance=ExtResource("3_b88qh")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 5, 1.75, 26.75)
+
+[node name="StaticCeiling" parent="Puzzle 2" instance=ExtResource("46_n1p18")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 6.5, 14)
+material_override = ExtResource("50_gdijt")
+
+[node name="StaticCeiling2" parent="Puzzle 2" instance=ExtResource("46_n1p18")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 6.5, 14)
+material_override = ExtResource("50_gdijt")
+
+[node name="StaticCeiling3" parent="Puzzle 2" instance=ExtResource("46_n1p18")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 6.5, 19)
+material_override = ExtResource("50_gdijt")
+
+[node name="StaticCeiling4" parent="Puzzle 2" instance=ExtResource("46_n1p18")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, -0.25, 19)
+material_override = ExtResource("50_gdijt")
+
+[node name="StaticCeiling5" parent="Puzzle 2" instance=ExtResource("46_n1p18")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 6.5, 24)
+material_override = ExtResource("50_gdijt")
+
+[node name="StaticCeiling7" parent="Puzzle 2" instance=ExtResource("46_n1p18")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 7, 14)
+material_override = ExtResource("50_gdijt")
+
+[node name="StaticCeiling8" parent="Puzzle 2" instance=ExtResource("46_n1p18")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 7, 19)
+material_override = ExtResource("50_gdijt")
+
+[node name="StaticCeiling9" parent="Puzzle 2" instance=ExtResource("46_n1p18")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 7, 24)
+material_override = ExtResource("50_gdijt")
+
+[node name="StaticCeiling10" parent="Puzzle 2" instance=ExtResource("46_n1p18")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 7, 29.5)
+material_override = ExtResource("50_gdijt")
+
+[node name="StaticCeiling11" parent="Puzzle 2" instance=ExtResource("46_n1p18")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 7, 35)
+material_override = ExtResource("50_gdijt")
+
+[node name="StaticCeiling12" parent="Puzzle 2" instance=ExtResource("46_n1p18")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5.25, 29.5)
+material_override = ExtResource("50_gdijt")
+
+[node name="StaticCeiling13" parent="Puzzle 2" instance=ExtResource("46_n1p18")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5.25, 35)
+material_override = ExtResource("50_gdijt")
+
+[node name="StaticCeiling6" parent="Puzzle 2" instance=ExtResource("46_n1p18")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, -0.25, 24)
+material_override = ExtResource("50_gdijt")
+
+[node name="StaticPropBookshelf" parent="Puzzle 2" instance=ExtResource("47_cet34")]
+transform = Transform3D(4.37114e-08, 1, 3.82137e-15, 1, -4.37114e-08, 8.74228e-08, 8.74228e-08, 0, -1, -7.5, 2.5, 26)
+
+[node name="StaticPropTable" parent="Puzzle 2" instance=ExtResource("55_1lcec")]
+transform = Transform3D(1, 0, 0, 0, -1, 8.74228e-08, 0, -8.74228e-08, -1, -5, 6.25, 24)
+
+[node name="StaticPropChair" parent="Puzzle 2" instance=ExtResource("51_oto85")]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, -3, 2, 26.5)
+
+[node name="StaticPropChair2" parent="Puzzle 2" instance=ExtResource("51_oto85")]
+transform = Transform3D(-1, 7.64274e-15, -8.74228e-08, 0, -1, -8.74228e-08, -8.74228e-08, -8.74228e-08, 1, -5, 6.25, 23)
+
+[node name="StaticPropChair3" parent="Puzzle 2" instance=ExtResource("51_oto85")]
+transform = Transform3D(-2.18557e-07, -8.74228e-08, 1, 0, -1, -8.74228e-08, 1, -1.91069e-14, 2.18557e-07, -6.5, 6.25, 24)
+
+[node name="StaticPropLight" parent="Puzzle 2" instance=ExtResource("20_tlfck")]
+transform = Transform3D(1, 0, 0, 0, -1, 8.74228e-08, 0, -8.74228e-08, -1, -5, 0, 19)
+
+[node name="StaticPropLight4" parent="Puzzle 2" instance=ExtResource("20_tlfck")]
+transform = Transform3D(-1, 8.74228e-08, -7.64274e-15, 8.74228e-08, 1, -8.74228e-08, 0, -8.74228e-08, -1, 0, 6.25, 18)
+
+[node name="StaticPropLight5" parent="Puzzle 2" instance=ExtResource("20_tlfck")]
+transform = Transform3D(-1, 8.74228e-08, -7.64274e-15, -3.82137e-15, 4.37114e-08, 1, 8.74228e-08, 1, -4.37114e-08, 0.25, 3.125, 21.5)
+
+[node name="StaticPropLight3" parent="Puzzle 2" instance=ExtResource("20_tlfck")]
+transform = Transform3D(-1, -8.74228e-08, 7.64274e-15, -8.74228e-08, 1, -8.74228e-08, 0, -8.74228e-08, -1, 1, 6.25, 12.5)
+
+[node name="StaticPropLight2" parent="Puzzle 2" instance=ExtResource("20_tlfck")]
+transform = Transform3D(1.77636e-15, -1.49012e-07, -1, 1, 4.37114e-08, -4.44058e-15, 4.37114e-08, -1, 1.49012e-07, 0, 3.125, 22)
+
+[node name="StaticPropBathroomSink" parent="Puzzle 2" instance=ExtResource("38_x5bsa")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -1.5, 0, 18)
+
+[node name="StaticPropToilet" parent="Puzzle 2" instance=ExtResource("41_ii6sb")]
+transform = Transform3D(-4.37114e-08, 0, 1, -8.74228e-08, -1, -3.82137e-15, 1, -8.74228e-08, 4.37114e-08, -1.5, 6.25, 21)
+
+[node name="StaticPropBathroomMirror" parent="Puzzle 2" instance=ExtResource("42_852xj")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -2, 2, 18)
+
+[node name="StaticPropBathTub" parent="Puzzle 2" instance=ExtResource("39_3v6rg")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 1.75, 0, 20.125)
+
+[node name="StaticPropBathroomRug" parent="Puzzle 2" instance=ExtResource("40_o8yk8")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0.625, 0, 20.125)
+
+[node name="StaticDoorFrame9" parent="Puzzle 2" instance=ExtResource("14_q5h4x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.25, 3.75, 15.25)
+
+[node name="StaticShorterDoorFrame" parent="Puzzle 2" instance=ExtResource("61_58s7x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.25, 5.625, 15.25)
+
+[node name="StaticPropCouch1" parent="Puzzle 2" instance=ExtResource("32_ha7md")]
+transform = Transform3D(4.37114e-08, -8.74228e-08, 1, 3.82137e-15, -1, -8.74228e-08, 1, 7.64274e-15, -4.37114e-08, -6.75, 6.25, 14)
+
+[node name="StaticPropCouch2" parent="Puzzle 2" instance=ExtResource("32_ha7md")]
+transform = Transform3D(-1.31134e-07, 8.74228e-08, -1, 3.82137e-15, -1, -8.74228e-08, -1, -1.52855e-14, 1.31134e-07, -3.25, 6.25, 14)
+
+[node name="StaticPropCouch3" parent="Puzzle 2" instance=ExtResource("32_ha7md")]
+transform = Transform3D(1, 1.14641e-14, -8.74228e-08, 3.82137e-15, -1, -8.74228e-08, -8.74228e-08, 8.74228e-08, -1, -5, 6.25, 15.75)
+
+[node name="StaticPropCouch4" parent="Puzzle 2" instance=ExtResource("32_ha7md")]
+transform = Transform3D(-1, -1.91069e-14, 1.74846e-07, 3.82137e-15, -1, -8.74228e-08, 1.74846e-07, -8.74228e-08, 1, -5, 6.25, 12.25)
+
+[node name="StaticPropDesk" parent="Puzzle 2" instance=ExtResource("44_tvp8y")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 6.5, 1.75, 13.25)
+
+[node name="StaticPropDeskChair" parent="Puzzle 2" instance=ExtResource("45_tww2f")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 6, 1.75, 13.25)
+
+[node name="StaticPropLight6" parent="Puzzle 2" instance=ExtResource("20_tlfck")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5, 32.25)
+
+[node name="Puzzle 3" type="Node3D" parent="."]
+
+[node name="StaticFloor" parent="Puzzle 3" instance=ExtResource("14_0w4t2")]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, -0.000294901, -0.25, 88.5001)
+
+[node name="StaticFloor16" parent="Puzzle 3" instance=ExtResource("14_0w4t2")]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, 1.24971, -0.25, 93.5001)
+
+[node name="StaticFloor17" parent="Puzzle 3" instance=ExtResource("14_0w4t2")]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, 6.24971, -0.25, 93.5001)
+
+[node name="StaticFloor18" parent="Puzzle 3" instance=ExtResource("14_0w4t2")]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, 1.24971, -0.25, 98.5001)
+
+[node name="StaticFloor36" parent="Puzzle 3" instance=ExtResource("14_0w4t2")]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, 6.24971, -0.25, 98.5001)
+
+[node name="StaticFloor37" parent="Puzzle 3" instance=ExtResource("14_0w4t2")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 1.24971, 5.25, 94.0001)
+material_override = ExtResource("32_d2j2w")
+
+[node name="StaticFloor38" parent="Puzzle 3" instance=ExtResource("14_0w4t2")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 6.24971, 5.25, 94.0001)
+material_override = ExtResource("32_d2j2w")
+
+[node name="StaticFloor39" parent="Puzzle 3" instance=ExtResource("14_0w4t2")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 1.24971, 5.25, 99.0001)
+material_override = ExtResource("32_d2j2w")
+
+[node name="StaticFloor40" parent="Puzzle 3" instance=ExtResource("14_0w4t2")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 6.24971, 5.25, 99.0001)
+material_override = ExtResource("32_d2j2w")
+
+[node name="StaticFloor2" parent="Puzzle 3" instance=ExtResource("14_0w4t2")]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, -0.000295296, -0.25, 83.5001)
+
+[node name="StaticFloor5" parent="Puzzle 3" instance=ExtResource("14_0w4t2")]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, -5.00029, 5.75, 88.5001)
+
+[node name="StaticFloor15" parent="Puzzle 3" instance=ExtResource("14_0w4t2")]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, -5.0003, 5.75, 83.5001)
+
+[node name="StaticFloor20" parent="Puzzle 3" instance=ExtResource("14_0w4t2")]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, -5.0003, 5.75, 73.5001)
+
+[node name="StaticFloor24" parent="Puzzle 3" instance=ExtResource("14_0w4t2")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -5.0003, 11.25, 78.5001)
+material_override = ExtResource("50_gdijt")
+
+[node name="StaticFloor29" parent="Puzzle 3" instance=ExtResource("14_0w4t2")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -5, 11.25, 84)
+material_override = ExtResource("50_gdijt")
+
+[node name="StaticFloor30" parent="Puzzle 3" instance=ExtResource("14_0w4t2")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -5.50029, 10.75, 89.0001)
+material_override = ExtResource("50_gdijt")
+
+[node name="StaticFloor31" parent="Puzzle 3" instance=ExtResource("14_0w4t2")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -0.000294797, 11.25, 89.0001)
+material_override = ExtResource("50_gdijt")
+
+[node name="StaticFloor32" parent="Puzzle 3" instance=ExtResource("14_0w4t2")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 4.99971, 10.75, 89.0001)
+material_override = ExtResource("50_gdijt")
+
+[node name="StaticFloor33" parent="Puzzle 3" instance=ExtResource("14_0w4t2")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -0.000295296, 11.25, 84.0001)
+material_override = ExtResource("50_gdijt")
+
+[node name="StaticFloor34" parent="Puzzle 3" instance=ExtResource("14_0w4t2")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 4.9997, 11.25, 84.0001)
+material_override = ExtResource("50_gdijt")
+
+[node name="StaticFloor25" parent="Puzzle 3" instance=ExtResource("14_0w4t2")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -5.5003, 10.75, 73.5001)
+material_override = ExtResource("50_gdijt")
+
+[node name="StaticFloor26" parent="Puzzle 3" instance=ExtResource("14_0w4t2")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -0.500296, 10.75, 73.5001)
+material_override = ExtResource("50_gdijt")
+
+[node name="StaticFloor35" parent="Puzzle 3" instance=ExtResource("14_0w4t2")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -0.000295699, 11.25, 78.5001)
+material_override = ExtResource("50_gdijt")
+
+[node name="StaticFloor27" parent="Puzzle 3" instance=ExtResource("14_0w4t2")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 4.9997, 10.75, 73.5001)
+material_override = ExtResource("50_gdijt")
+
+[node name="StaticFloor28" parent="Puzzle 3" instance=ExtResource("14_0w4t2")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 4.9997, 10.75, 78.5001)
+material_override = ExtResource("50_gdijt")
+
+[node name="StaticFloor21" parent="Puzzle 3" instance=ExtResource("14_0w4t2")]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, -0.000296198, 5.75, 73.5001)
+
+[node name="StaticFloor23" parent="Puzzle 3" instance=ExtResource("14_0w4t2")]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, 4.9997, 5.75, 73.5001)
+
+[node name="StaticFloor22" parent="Puzzle 3" instance=ExtResource("14_0w4t2")]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, -0.000295699, 5.75, 78.5001)
+
+[node name="StaticFloor13" parent="Puzzle 3" instance=ExtResource("14_0w4t2")]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, -0.000294901, 5.75, 88.5001)
+
+[node name="StaticFloor14" parent="Puzzle 3" instance=ExtResource("14_0w4t2")]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, 4.99971, 5.75, 88.5001)
+
+[node name="StaticFloor19" parent="Puzzle 3" instance=ExtResource("14_0w4t2")]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, 4.9997, 5.75, 83.5001)
+
+[node name="StaticFloor6" parent="Puzzle 3" instance=ExtResource("14_0w4t2")]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, -5.0003, -0.25, 83.5001)
+
+[node name="StaticFloor3" parent="Puzzle 3" instance=ExtResource("14_0w4t2")]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, 4.99971, -0.25, 88.5001)
+
+[node name="StaticFloor4" parent="Puzzle 3" instance=ExtResource("14_0w4t2")]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, 4.9997, -0.25, 83.5001)
+
+[node name="StaticFloor7" parent="Puzzle 3" instance=ExtResource("14_0w4t2")]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, -0.000295699, -0.25, 78.5001)
+
+[node name="StaticFloor9" parent="Puzzle 3" instance=ExtResource("14_0w4t2")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 4.9997, -0.75, 78.5001)
+
+[node name="StaticFloor8" parent="Puzzle 3" instance=ExtResource("14_0w4t2")]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, -5.0003, -0.25, 78.5001)
+
+[node name="StaticFloor10" parent="Puzzle 3" instance=ExtResource("14_0w4t2")]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, -0.000296198, -0.25, 73.5001)
+
+[node name="StaticFloor11" parent="Puzzle 3" instance=ExtResource("14_0w4t2")]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, -5.0003, -0.25, 73.5001)
+
+[node name="StaticFloor12" parent="Puzzle 3" instance=ExtResource("14_0w4t2")]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, 4.9997, -0.25, 73.5001)
+
+[node name="StaticHoleFloor" parent="Puzzle 3" instance=ExtResource("31_gfjy1")]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, -5.0003, 5.75, 78.5001)
+
+[node name="StaticHoleFloor2" parent="Puzzle 3" instance=ExtResource("31_gfjy1")]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, -0.000295296, 5.75, 83.5001)
+
+[node name="StaticHoleFloor5" parent="Puzzle 3" instance=ExtResource("31_gfjy1")]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, 4.9997, 5.75, 78.5001)
+
+[node name="StaticHoleFloor6" parent="Puzzle 3" instance=ExtResource("31_gfjy1")]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, 4.9997, -0.25, 78.5001)
+
+[node name="StaticFloor45" parent="Puzzle 3" instance=ExtResource("14_0w4t2")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -5.00029, 5.25, 88.5001)
+
+[node name="StaticFloor46" parent="Puzzle 3" instance=ExtResource("14_0w4t2")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -5.0003, 5.25, 83.5001)
+material_override = ExtResource("32_d2j2w")
+
+[node name="StaticFloor47" parent="Puzzle 3" instance=ExtResource("14_0w4t2")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -5.0003, 5.25, 73.5001)
+material_override = ExtResource("50_gdijt")
+
+[node name="StaticFloor48" parent="Puzzle 3" instance=ExtResource("14_0w4t2")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -0.000296198, 5.25, 73.5001)
+material_override = ExtResource("50_gdijt")
+
+[node name="StaticFloor49" parent="Puzzle 3" instance=ExtResource("14_0w4t2")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 4.9997, 5.25, 73.5001)
+material_override = ExtResource("50_gdijt")
+
+[node name="StaticFloor50" parent="Puzzle 3" instance=ExtResource("14_0w4t2")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -0.000295699, 5.25, 78.5001)
+material_override = ExtResource("50_gdijt")
+
+[node name="StaticFloor51" parent="Puzzle 3" instance=ExtResource("14_0w4t2")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -0.000294901, 5.25, 88.5001)
+material_override = ExtResource("50_gdijt")
+
+[node name="StaticFloor52" parent="Puzzle 3" instance=ExtResource("14_0w4t2")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 4.99971, 5.25, 88.5001)
+material_override = ExtResource("50_gdijt")
+
+[node name="StaticFloor53" parent="Puzzle 3" instance=ExtResource("14_0w4t2")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 4.9997, 5.25, 83.5001)
+material_override = ExtResource("50_gdijt")
+
+[node name="StaticHoleFloor3" parent="Puzzle 3" instance=ExtResource("31_gfjy1")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -5.0003, 5.25, 78.5001)
+material_override = ExtResource("50_gdijt")
+
+[node name="StaticHoleFloor7" parent="Puzzle 3" instance=ExtResource("31_gfjy1")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 4.9997, 5.25, 78.5001)
+material_override = ExtResource("50_gdijt")
+
+[node name="StaticHoleFloor4" parent="Puzzle 3" instance=ExtResource("31_gfjy1")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -0.000295296, 5.25, 83.5001)
+material_override = ExtResource("50_gdijt")
+
+[node name="StaticWall" parent="Puzzle 3" instance=ExtResource("10_kmire")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 2.25, 2.5, 88.5)
+
+[node name="StaticWall2" parent="Puzzle 3" instance=ExtResource("10_kmire")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -1.0003, 2.5, 88.5001)
+
+[node name="StaticWall3" parent="Puzzle 3" instance=ExtResource("10_kmire")]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, -5.0003, 2.5, 81.2501)
+
+[node name="StaticWall4" parent="Puzzle 3" instance=ExtResource("10_kmire")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -7.2503, 2.5, 84.0001)
+
+[node name="StaticWall7" parent="Puzzle 3" instance=ExtResource("10_kmire")]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, -4.5003, 2.5, 86.2501)
+
+[node name="StaticWall8" parent="Puzzle 3" instance=ExtResource("10_kmire")]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, 4.99971, 2.5, 91.2501)
+
+[node name="StaticWall40" parent="Puzzle 3" instance=ExtResource("10_kmire")]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, 5.49971, 2.5, 101.25)
+
+[node name="StaticWall41" parent="Puzzle 3" instance=ExtResource("10_kmire")]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, 0.499706, 2.5, 101.25)
+
+[node name="StaticWall37" parent="Puzzle 3" instance=ExtResource("10_kmire")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -1.00029, 2.5, 98.5001)
+
+[node name="StaticWall36" parent="Puzzle 3" instance=ExtResource("10_kmire")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -1.00029, 2.5, 93.5001)
+
+[node name="StaticWall38" parent="Puzzle 3" instance=ExtResource("10_kmire")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 7.74971, 2.5, 98.5001)
+
+[node name="StaticWall39" parent="Puzzle 3" instance=ExtResource("10_kmire")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 7.74971, 2.5, 93.5001)
+
+[node name="StaticWall15" parent="Puzzle 3" instance=ExtResource("10_kmire")]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, 4.9997, 2.5, 81.2501)
+
+[node name="StaticWall5" parent="Puzzle 3" instance=ExtResource("10_kmire")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -2.7503, 2.5, 78.5001)
+
+[node name="StaticWall6" parent="Puzzle 3" instance=ExtResource("10_kmire")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -7.2503, 2.5, 78.5001)
+
+[node name="StaticWall9" parent="Puzzle 3" instance=ExtResource("10_kmire")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -7.2503, 2.5, 73.0001)
+
+[node name="StaticWall13" parent="Puzzle 3" instance=ExtResource("10_kmire")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 7.7497, 2.5, 73.5001)
+
+[node name="StaticWall16" parent="Puzzle 3" instance=ExtResource("10_kmire")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 7.7497, 2.5, 78.5001)
+
+[node name="StaticWall18" parent="Puzzle 3" instance=ExtResource("10_kmire")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 7.7497, 8, 78.5001)
+
+[node name="StaticWall22" parent="Puzzle 3" instance=ExtResource("10_kmire")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 2.2497, 8.5, 78.5001)
+
+[node name="StaticWall34" parent="Puzzle 3" instance=ExtResource("10_kmire")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -2.2503, 8.5, 78.5001)
+
+[node name="StaticWall19" parent="Puzzle 3" instance=ExtResource("10_kmire")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 7.7497, 8, 73.5001)
+
+[node name="StaticWall20" parent="Puzzle 3" instance=ExtResource("10_kmire")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 7.7497, 8, 83.5001)
+
+[node name="StaticWall21" parent="Puzzle 3" instance=ExtResource("10_kmire")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 7.74971, 8, 88.5001)
+
+[node name="StaticWall26" parent="Puzzle 3" instance=ExtResource("10_kmire")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -7.7503, 8, 78.5001)
+
+[node name="StaticWall27" parent="Puzzle 3" instance=ExtResource("10_kmire")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -7.7503, 8, 73.5001)
+
+[node name="StaticWall28" parent="Puzzle 3" instance=ExtResource("10_kmire")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -7.7503, 8, 83.5001)
+
+[node name="StaticWall29" parent="Puzzle 3" instance=ExtResource("10_kmire")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -7.75029, 8, 88.5001)
+
+[node name="StaticWall17" parent="Puzzle 3" instance=ExtResource("10_kmire")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 7.7497, 2.5, 83.5001)
+
+[node name="StaticWall14" parent="Puzzle 3" instance=ExtResource("10_kmire")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 7.74971, 2.5, 88.5001)
+
+[node name="StaticWall10" parent="Puzzle 3" instance=ExtResource("10_kmire")]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, -4.5003, 2.5, 70.7501)
+
+[node name="StaticWall12" parent="Puzzle 3" instance=ExtResource("10_kmire")]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, 5.4997, 2.5, 70.7501)
+
+[node name="StaticWall23" parent="Puzzle 3" instance=ExtResource("10_kmire")]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, -5.0003, 8, 70.7501)
+
+[node name="StaticWall24" parent="Puzzle 3" instance=ExtResource("10_kmire")]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, -0.000296399, 8.5, 70.7501)
+
+[node name="StaticWall25" parent="Puzzle 3" instance=ExtResource("10_kmire")]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, 4.9997, 8, 70.7501)
+
+[node name="StaticQuarterWall" parent="Puzzle 3" instance=ExtResource("13_k8lae")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -2.75029, 2.5, 85.1251)
+
+[node name="StaticQuarterWall3" parent="Puzzle 3" instance=ExtResource("13_k8lae")]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, 1.87471, 2.5, 91.2501)
+
+[node name="StaticQuarterWall2" parent="Puzzle 3" instance=ExtResource("13_k8lae")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -2.7503, 2.5, 82.3751)
+
+[node name="StaticShorterWall" parent="Puzzle 3" instance=ExtResource("16_gmbux")]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, -5.0003, 3.125, 75.7501)
+
+[node name="StaticShorterWall2" parent="Puzzle 3" instance=ExtResource("16_gmbux")]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, -5.0003, 4.375, 75.7501)
+
+[node name="StaticShortQuarterWall" parent="Puzzle 3" instance=ExtResource("31_vcvl3")]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, -3.1253, 1.25, 75.7501)
+
+[node name="StaticShortQuarterWall2" parent="Puzzle 3" instance=ExtResource("31_vcvl3")]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, -6.8753, 1.25, 75.7501)
+
+[node name="StaticShorterWall5" parent="Puzzle 3" instance=ExtResource("16_gmbux")]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, -5.0003, 9.375, 76.2501)
+
+[node name="StaticShortQuarterWall5" parent="Puzzle 3" instance=ExtResource("31_vcvl3")]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, -3.1253, 7.5, 76.2501)
+
+[node name="StaticShortQuarterWall6" parent="Puzzle 3" instance=ExtResource("31_vcvl3")]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, -6.8753, 7.5, 76.2501)
+
+[node name="StaticDoorFrame" parent="Puzzle 3" instance=ExtResource("14_q5h4x")]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, 0.499705, 3.75, 86.2501)
+
+[node name="StaticDoorFrame5" parent="Puzzle 3" instance=ExtResource("14_q5h4x")]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, 0.499705, 3.75, 91.2501)
+
+[node name="StaticDoorFrame2" parent="Puzzle 3" instance=ExtResource("14_q5h4x")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -2.7503, 3.75, 83.7501)
+
+[node name="StaticPillar" parent="Puzzle 3" instance=ExtResource("11_1cxi8")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -1.7503, 2.5, 86.2501)
+
+[node name="StaticPillar2" parent="Puzzle 3" instance=ExtResource("11_1cxi8")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 2.2497, 2.5, 80.7501)
+
+[node name="StaticPillar5" parent="Puzzle 3" instance=ExtResource("11_1cxi8")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 2.2497, 2.5, 81.2501)
+
+[node name="StaticPillar3" parent="Puzzle 3" instance=ExtResource("11_1cxi8")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 2.2497, 2.5, 76.2501)
+
+[node name="StaticPillar4" parent="Puzzle 3" instance=ExtResource("11_1cxi8")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 2.2497, 2.5, 75.7501)
+
+[node name="StaticPillar9" parent="Puzzle 3" instance=ExtResource("11_1cxi8")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -2.7503, 2.5, 71.2501)
+
+[node name="StaticPillar6" parent="Puzzle 3" instance=ExtResource("11_1cxi8")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 2.2497, 8.5, 81.2501)
+
+[node name="StaticPillar7" parent="Puzzle 3" instance=ExtResource("11_1cxi8")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -2.2503, 8.5, 81.2501)
+
+[node name="StaticPillar8" parent="Puzzle 3" instance=ExtResource("11_1cxi8")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -0.50029, 2.5, 91.2501)
+
+[node name="StaticPillar12" parent="Puzzle 3" instance=ExtResource("11_1cxi8")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -0.50029, 2.5, 86.2501)
+
+[node name="StaticPillar13" parent="Puzzle 3" instance=ExtResource("11_1cxi8")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 1.49971, 2.5, 86.2501)
+
+[node name="StaticWall30" parent="Puzzle 3" instance=ExtResource("10_kmire")]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, -5.00029, 8, 91.2501)
+
+[node name="StaticWall35" parent="Puzzle 3" instance=ExtResource("10_kmire")]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, -5.0003, 8.5, 86.2501)
+
+[node name="StaticWall31" parent="Puzzle 3" instance=ExtResource("10_kmire")]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, -0.000294596, 8, 91.2501)
+
+[node name="StaticWall32" parent="Puzzle 3" instance=ExtResource("10_kmire")]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, 4.99971, 8, 91.2501)
+
+[node name="StaticWall33" parent="Puzzle 3" instance=ExtResource("10_kmire")]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, 4.9997, 8.5, 81.2501)
+
+[node name="StaticWall46" parent="Puzzle 3" instance=ExtResource("10_kmire")]
+transform = Transform3D(1, 0, 1.74845e-07, 0, 1, 0, -1.74845e-07, 0, 1, 2.25, 8.5, 88.5)
+
+[node name="StaticHalfPillar" parent="Puzzle 3" instance=ExtResource("12_black")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -1.3753, 2.5, 86.2501)
+
+[node name="StaticHalfPillar2" parent="Puzzle 3" instance=ExtResource("12_black")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -2.7503, 2.5, 85.8751)
+
+[node name="StaticHalfPillar3" parent="Puzzle 3" instance=ExtResource("12_black")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -2.7503, 2.5, 81.6251)
+
+[node name="StaticHalfPillar6" parent="Puzzle 3" instance=ExtResource("12_black")]
+transform = Transform3D(1, 0, 1.06581e-14, 0, 1, 0, -1.06581e-14, 0, 1, 1.875, 2.5, 86.25)
+
+[node name="StaticQuarterWall8" parent="Puzzle 3" instance=ExtResource("13_k8lae")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -2.75, 2.5, 74.875)
+
+[node name="StaticQuarterWall9" parent="Puzzle 3" instance=ExtResource("13_k8lae")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -2.75, 2.5, 72.125)
+
+[node name="StaticDoorFrame6" parent="Puzzle 3" instance=ExtResource("14_q5h4x")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -2.75, 3.75, 73.5)
+
+[node name="StaticWindow" parent="Puzzle 3" instance=ExtResource("22_qgjvl")]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, -5.0003, 1.25, 75.7501)
+
+[node name="StaticWindow3" parent="Puzzle 3" instance=ExtResource("22_qgjvl")]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, -5.0003, 7.5, 76.2501)
+
+[node name="StaticWindow4" parent="Puzzle 3" instance=ExtResource("22_qgjvl")]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, -5.0003, 7.5, 81.2501)
+
+[node name="StaticShorterWall3" parent="Puzzle 3" instance=ExtResource("16_gmbux")]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, 4.9997, 3.125, 75.7501)
+
+[node name="StaticShorterWall4" parent="Puzzle 3" instance=ExtResource("16_gmbux")]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, 4.9997, 4.375, 75.7501)
+
+[node name="StaticShortQuarterWall3" parent="Puzzle 3" instance=ExtResource("31_vcvl3")]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, 6.8747, 1.25, 75.7501)
+
+[node name="StaticShortQuarterWall4" parent="Puzzle 3" instance=ExtResource("31_vcvl3")]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, 3.1247, 1.25, 75.7501)
+
+[node name="StaticBeam" parent="Puzzle 3" instance=ExtResource("17_klqas")]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, -5.0003, 10.25, 76.2501)
+
+[node name="StaticBeam6" parent="Puzzle 3" instance=ExtResource("17_klqas")]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, -5.0003, 10.75, 76.2501)
+
+[node name="StaticShorterWall6" parent="Puzzle 3" instance=ExtResource("16_gmbux")]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, -5.0003, 9.375, 81.2501)
+
+[node name="StaticShortQuarterWall7" parent="Puzzle 3" instance=ExtResource("31_vcvl3")]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, -3.1253, 7.5, 81.2501)
+
+[node name="StaticShortQuarterWall8" parent="Puzzle 3" instance=ExtResource("31_vcvl3")]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, -6.8753, 7.5, 81.2501)
+
+[node name="StaticBeam2" parent="Puzzle 3" instance=ExtResource("17_klqas")]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, -5.0003, 10.25, 81.2501)
+
+[node name="StaticBeam3" parent="Puzzle 3" instance=ExtResource("17_klqas")]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, -5.0003, 10.75, 81.2501)
+
+[node name="StaticBeam10" parent="Puzzle 3" instance=ExtResource("17_klqas")]
+transform = Transform3D(1, 0, 1.74845e-07, 0, 1, 0, -1.74845e-07, 0, 1, -7.75, 10.75, 84)
+
+[node name="StaticBeam11" parent="Puzzle 3" instance=ExtResource("17_klqas")]
+transform = Transform3D(1, 0, 1.74845e-07, 0, 1, 0, -1.74845e-07, 0, 1, -7.75, 10.75, 78.5)
+
+[node name="StaticBeam7" parent="Puzzle 3" instance=ExtResource("17_klqas")]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, -0.000299931, 10.75, 91.2501)
+
+[node name="StaticBeam9" parent="Puzzle 3" instance=ExtResource("17_klqas")]
+transform = Transform3D(1, 0, 1.74845e-07, 0, 1, 0, -1.74845e-07, 0, 1, 7.75, 10.75, 83.5)
+
+[node name="StaticBeam5" parent="Puzzle 3" instance=ExtResource("17_klqas")]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, 1.25, 5.25, 91.25)
+
+[node name="StaticBeam4" parent="Puzzle 3" instance=ExtResource("17_klqas")]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, 4.9997, 5.25, 80.7501)
+
+[node name="StaticBeam8" parent="Puzzle 3" instance=ExtResource("17_klqas")]
+transform = Transform3D(1, 0, 1.74845e-07, 0, 1, 0, -1.74845e-07, 0, 1, 7.7497, 5.25, 78.5001)
+
+[node name="StaticWindow2" parent="Puzzle 3" instance=ExtResource("22_qgjvl")]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, 4.9997, 1.25, 75.7501)
+
+[node name="Blue Door" parent="Puzzle 3" instance=ExtResource("3_b88qh")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0.499705, 0, 86.2501)
+requiresKey = true
+doorLabel = "blue"
+inactiveMaterial = ExtResource("28_2rspx")
+activeMaterial = ExtResource("16_soduc")
+interactableName = "blue door"
+
+[node name="Green Door3" parent="Puzzle 3" instance=ExtResource("3_b88qh")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0.499705, 0, 91.2501)
+doesDoorStartOpen = true
+inactiveMaterial = ExtResource("28_6hceu")
+activeMaterial = ExtResource("26_o44g7")
+isPlayerInteractable = false
+
+[node name="Green Door" parent="Puzzle 3" instance=ExtResource("3_b88qh")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -2.7503, 0, 83.7501)
+doesDoorStartOpen = true
+inactiveMaterial = ExtResource("28_6hceu")
+activeMaterial = ExtResource("26_o44g7")
+isPlayerInteractable = false
+
+[node name="StaticQuarterWall6" parent="Puzzle 3" instance=ExtResource("13_k8lae")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -2.75029, 8.5, 90.1251)
+
+[node name="StaticQuarterWall7" parent="Puzzle 3" instance=ExtResource("13_k8lae")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -2.75029, 8.5, 87.3751)
+
+[node name="StaticDoorFrame4" parent="Puzzle 3" instance=ExtResource("14_q5h4x")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -2.75029, 9.75, 88.7501)
+
+[node name="StaticHalfPillar4" parent="Puzzle 3" instance=ExtResource("12_black")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -2.75029, 8.5, 90.8751)
+
+[node name="StaticHalfPillar5" parent="Puzzle 3" instance=ExtResource("12_black")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -2.7503, 8.5, 86.6251)
+
+[node name="Green Door2" parent="Puzzle 3" instance=ExtResource("3_b88qh")]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, -2.75029, 6, 88.7501)
+inactiveMaterial = ExtResource("28_6hceu")
+activeMaterial = ExtResource("26_o44g7")
+isPlayerInteractable = false
+
+[node name="StaticQuarterWall4" parent="Puzzle 3" instance=ExtResource("13_k8lae")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 2.2497, 2.5, 79.8751)
+
+[node name="StaticQuarterWall5" parent="Puzzle 3" instance=ExtResource("13_k8lae")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 2.2497, 2.5, 77.1251)
+
+[node name="StaticDoorFrame3" parent="Puzzle 3" instance=ExtResource("14_q5h4x")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 2.2497, 3.75, 78.5001)
+
+[node name="Red Door" parent="Puzzle 3" instance=ExtResource("3_b88qh")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 2.2497, 0, 78.5001)
+inactiveMaterial = ExtResource("30_166bq")
+activeMaterial = ExtResource("25_lylg3")
+isPlayerInteractable = false
+
+[node name="Blue Key" parent="Puzzle 3" instance=ExtResource("15_0nfu8")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -7, 6.75, 87.063)
+ThisKeyLabel = "blue"
+inactiveMaterial = ExtResource("28_2rspx")
+activeMaterial = ExtResource("16_soduc")
+isBroken = true
+interactableName = "blue key"
+
+[node name="Red Scale" parent="Puzzle 3" node_paths=PackedStringArray("receivers") instance=ExtResource("12_vdhs4")]
+transform = Transform3D(1, 0, 1.74846e-07, 0, 1, 0, -1.74846e-07, 0, 1, 5, 0, 71.5)
+inactiveMaterial = ExtResource("30_166bq")
+activeMaterial = ExtResource("25_lylg3")
+receivers = [NodePath("../Red Door"), NodePath("../Red MovingPlatform")]
+
+[node name="Green Scale" parent="Puzzle 3" node_paths=PackedStringArray("receivers") instance=ExtResource("12_vdhs4")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -5.0003, 0, 78.5001)
+receivers = [NodePath("../Green Door")]
+
+[node name="Green Scale2" parent="Puzzle 3" node_paths=PackedStringArray("receivers") instance=ExtResource("12_vdhs4")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 6.1, 6, 90.625)
+inactiveMaterial = ExtResource("28_6hceu")
+activeMaterial = ExtResource("26_o44g7")
+receivers = [NodePath("../Green Door2"), NodePath("../Green Door3")]
+
+[node name="Red Box" parent="Puzzle 3" instance=ExtResource("7_qspsy")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 7, 2.25, 89.25)
+inactiveMaterial = ExtResource("30_166bq")
+activeMaterial = ExtResource("25_lylg3")
+isBroken = true
+interactableName = "red box"
+
+[node name="Green Box" parent="Puzzle 3" instance=ExtResource("7_qspsy")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -5, 10, 78.5)
+inactiveMaterial = ExtResource("28_6hceu")
+activeMaterial = ExtResource("26_o44g7")
+interactableName = "green box"
+
+[node name="Red Lamp" parent="Puzzle 3" node_paths=PackedStringArray("interactableToSpawn") instance=ExtResource("6_a7xj0")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -6.5003, 0, 85.5001)
+inactiveMaterial = ExtResource("30_166bq")
+activeMaterial = ExtResource("25_lylg3")
+interactableToSpawn = NodePath("../Red Box")
+
+[node name="Green Lamp" parent="Puzzle 3" node_paths=PackedStringArray("interactableToSpawn") instance=ExtResource("6_a7xj0")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -7.0003, 6, 71.5001)
+inactiveMaterial = ExtResource("28_6hceu")
+activeMaterial = ExtResource("26_o44g7")
+interactableToSpawn = NodePath("../Green Box")
+
+[node name="Blue Lamp" parent="Puzzle 3" node_paths=PackedStringArray("interactableToSpawn") instance=ExtResource("6_a7xj0")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -7.00029, 6, 90.5001)
+inactiveMaterial = ExtResource("28_2rspx")
+activeMaterial = ExtResource("16_soduc")
+interactableToSpawn = NodePath("../Blue Key")
+
+[node name="Red Lamp2" parent="Puzzle 3" node_paths=PackedStringArray("receivers") instance=ExtResource("6_a7xj0")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -3.0003, 6, 71.5001)
+inactiveMaterial = ExtResource("30_166bq")
+activeMaterial = ExtResource("25_lylg3")
+receivers = [NodePath("../Red MovingPlatform2")]
+
+[node name="Red MovingPlatform" parent="Puzzle 3" instance=ExtResource("32_eguhh")]
+transform = Transform3D(1, 0, 1.74846e-07, 0, 1, 0, -1.74846e-07, 0, 1, 5, -0.25, 78.5)
+platformType = "upDown"
+startAtEnd = true
+inactiveMaterial = ExtResource("30_166bq")
+activeMaterial = ExtResource("25_lylg3")
+
+[node name="Red MovingPlatform2" parent="Puzzle 3" instance=ExtResource("32_eguhh")]
+transform = Transform3D(1, 0, 1.74846e-07, 0, 1, 0, -1.74846e-07, 0, 1, -5.0003, 6, 73.5001)
+platformType = "fwdBck"
+inactiveMaterial = ExtResource("30_166bq")
+activeMaterial = ExtResource("25_lylg3")
+
+[node name="StaticPropCouch1" parent="Puzzle 3" instance=ExtResource("32_ha7md")]
+transform = Transform3D(1, 0, 1.74846e-07, 0, 1, 0, -1.74846e-07, 0, 1, 3.49971, 0, 96.0001)
+
+[node name="StaticQuarterWall17" parent="Puzzle 3" instance=ExtResource("13_k8lae")]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, -0.875297, 2.5, 59.7501)
+
+[node name="StaticQuarterWall18" parent="Puzzle 3" instance=ExtResource("13_k8lae")]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, 1.8747, 2.5, 59.7501)
+
+[node name="StaticDoorFrame9" parent="Puzzle 3" instance=ExtResource("14_q5h4x")]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, 0.499703, 3.75, 59.7501)
+
+[node name="White StaticPillar13" parent="Puzzle 3" instance=ExtResource("11_1cxi8")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 2.7497, 2.5, 65.2501)
+material_override = ExtResource("32_d2j2w")
+
+[node name="White StaticPillar14" parent="Puzzle 3" instance=ExtResource("11_1cxi8")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -1.7503, 2.5, 65.2501)
+material_override = ExtResource("32_d2j2w")
+
+[node name="White StaticBeam15" parent="Puzzle 3" instance=ExtResource("17_klqas")]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, 0.499703, 5.25, 65.2501)
+material_override = ExtResource("50_gdijt")
+
+[node name="White StaticBeam16" parent="Puzzle 3" instance=ExtResource("17_klqas")]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, 0.499703, -0.25, 65.2501)
+material_override = ExtResource("18_e3vyq")
+
+[node name="White StaticBeam17" parent="Puzzle 3" instance=ExtResource("17_klqas")]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, 0.499703, -0.25, 59.7501)
+material_override = ExtResource("18_e3vyq")
+
+[node name="Door7" parent="Puzzle 3" node_paths=PackedStringArray("mesh", "outlines") instance=ExtResource("3_b88qh")]
+transform = Transform3D(-1, 0, -2.62268e-07, 0, 1, 0, 2.62268e-07, 0, -1, 0.499703, 0, 59.7501)
+mesh = NodePath("../../Puzzle 2/Door3/Hinge/DoorMesh")
+outlines = [NodePath("../../Puzzle 2/Door3/Hinge/DoorMesh/DoorOutline"), NodePath("../../Puzzle 2/Door3/Hinge/DoorMesh/HandleBackMesh/HandleBackOutline"), NodePath("../../Puzzle 2/Door3/Hinge/DoorMesh/KnobBackMesh/KnobBackOutline"), NodePath("../../Puzzle 2/Door3/Hinge/DoorMesh/HandleFrontMesh/HandleFrontOutline"), NodePath("../../Puzzle 2/Door3/Hinge/DoorMesh/KnobFrontMesh/KnobFrontOutline")]
+isPlayerInteractable = false
+
+[node name="StaticFloor41" parent="Puzzle 3" instance=ExtResource("14_0w4t2")]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, 0.499703, -0.25, 68.0001)
+
+[node name="StaticFloor42" parent="Puzzle 3" instance=ExtResource("14_0w4t2")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0.499703, 5.25, 68.0001)
+material_override = ExtResource("50_gdijt")
+
+[node name="StaticWall42" parent="Puzzle 3" instance=ExtResource("10_kmire")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -1.7503, 2.5, 68.0001)
+
+[node name="StaticWall43" parent="Puzzle 3" instance=ExtResource("10_kmire")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 2.7497, 2.5, 68.0001)
+
+[node name="StaticFloor43" parent="Puzzle 3" instance=ExtResource("14_0w4t2")]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, 0.499703, -0.25, 62.5001)
+
+[node name="StaticFloor44" parent="Puzzle 3" instance=ExtResource("14_0w4t2")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0.499703, 5.25, 62.5001)
+material_override = ExtResource("50_gdijt")
+
+[node name="StaticWall44" parent="Puzzle 3" instance=ExtResource("10_kmire")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -1.7503, 2.5, 62.5001)
+
+[node name="StaticWall45" parent="Puzzle 3" instance=ExtResource("10_kmire")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 2.7497, 2.5, 62.5001)
+
+[node name="StaticQuarterWall19" parent="Puzzle 3" instance=ExtResource("13_k8lae")]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, -0.875296, 2.5, 70.7501)
+
+[node name="StaticQuarterWall20" parent="Puzzle 3" instance=ExtResource("13_k8lae")]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, 1.8747, 2.5, 70.7501)
+
+[node name="StaticDoorFrame10" parent="Puzzle 3" instance=ExtResource("14_q5h4x")]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, 0.499704, 3.75, 70.7501)
+
+[node name="White StaticPillar15" parent="Puzzle 3" instance=ExtResource("11_1cxi8")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 2.7497, 2.5, 70.7501)
+material_override = ExtResource("32_d2j2w")
+
+[node name="White StaticPillar16" parent="Puzzle 3" instance=ExtResource("11_1cxi8")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -1.7503, 2.5, 70.7501)
+material_override = ExtResource("32_d2j2w")
+
+[node name="White StaticBeam18" parent="Puzzle 3" instance=ExtResource("17_klqas")]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, 0.499704, 5.25, 70.7501)
+material_override = ExtResource("32_d2j2w")
+
+[node name="White StaticBeam19" parent="Puzzle 3" instance=ExtResource("17_klqas")]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, 0.499704, -0.25, 70.7501)
+material_override = ExtResource("18_e3vyq")
+
+[node name="Door8" parent="Puzzle 3" node_paths=PackedStringArray("mesh", "outlines") instance=ExtResource("3_b88qh")]
+transform = Transform3D(-1, 0, -2.62268e-07, 0, 1, 0, 2.62268e-07, 0, -1, 0.499704, 0, 70.7501)
+mesh = NodePath("../../Puzzle 2/Door4/Hinge/DoorMesh")
+outlines = [NodePath("../../Puzzle 2/Door4/Hinge/DoorMesh/DoorOutline"), NodePath("../../Puzzle 2/Door4/Hinge/DoorMesh/HandleBackMesh/HandleBackOutline"), NodePath("../../Puzzle 2/Door4/Hinge/DoorMesh/KnobBackMesh/KnobBackOutline"), NodePath("../../Puzzle 2/Door4/Hinge/DoorMesh/HandleFrontMesh/HandleFrontOutline"), NodePath("../../Puzzle 2/Door4/Hinge/DoorMesh/KnobFrontMesh/KnobFrontOutline")]
+
+[node name="Door9" parent="Puzzle 3" node_paths=PackedStringArray("mesh", "outlines") instance=ExtResource("3_b88qh")]
+transform = Transform3D(3.05979e-07, 0, -1, 0, 1, 0, 1, 0, 3.05979e-07, -2.75, 0, 73.5)
+mesh = NodePath("../../Puzzle 2/Door4/Hinge/DoorMesh")
+outlines = [NodePath("../../Puzzle 2/Door4/Hinge/DoorMesh/DoorOutline"), NodePath("../../Puzzle 2/Door4/Hinge/DoorMesh/HandleBackMesh/HandleBackOutline"), NodePath("../../Puzzle 2/Door4/Hinge/DoorMesh/KnobBackMesh/KnobBackOutline"), NodePath("../../Puzzle 2/Door4/Hinge/DoorMesh/HandleFrontMesh/HandleFrontOutline"), NodePath("../../Puzzle 2/Door4/Hinge/DoorMesh/KnobFrontMesh/KnobFrontOutline")]
+
+[node name="StaticPillar10" parent="Puzzle 3" instance=ExtResource("11_1cxi8")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 2.2497, 2.5, 71.2501)
+
+[node name="StaticPillar14" parent="Puzzle 3" instance=ExtResource("11_1cxi8")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 2.2497, 8.5, 75.7501)
+
+[node name="StaticPillar15" parent="Puzzle 3" instance=ExtResource("11_1cxi8")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 2.2497, 8.5, 71.2501)
+
+[node name="StaticQuarterWall10" parent="Puzzle 3" instance=ExtResource("13_k8lae")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 2.25, 2.5, 74.875)
+
+[node name="StaticQuarterWall11" parent="Puzzle 3" instance=ExtResource("13_k8lae")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 2.25, 2.5, 72.125)
+
+[node name="StaticDoorFrame7" parent="Puzzle 3" instance=ExtResource("14_q5h4x")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 2.25, 3.75, 73.5)
+
+[node name="Door10" parent="Puzzle 3" node_paths=PackedStringArray("mesh", "outlines") instance=ExtResource("3_b88qh")]
+transform = Transform3D(3.05979e-07, 0, -1, 0, 1, 0, 1, 0, 3.05979e-07, 2.25, 0, 73.5)
+mesh = NodePath("../../Puzzle 2/Door4/Hinge/DoorMesh")
+outlines = [NodePath("../../Puzzle 2/Door4/Hinge/DoorMesh/DoorOutline"), NodePath("../../Puzzle 2/Door4/Hinge/DoorMesh/HandleBackMesh/HandleBackOutline"), NodePath("../../Puzzle 2/Door4/Hinge/DoorMesh/KnobBackMesh/KnobBackOutline"), NodePath("../../Puzzle 2/Door4/Hinge/DoorMesh/HandleFrontMesh/HandleFrontOutline"), NodePath("../../Puzzle 2/Door4/Hinge/DoorMesh/KnobFrontMesh/KnobFrontOutline")]
+
+[node name="StaticQuarterWall14" parent="Puzzle 3" instance=ExtResource("13_k8lae")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 2.25, 8.5, 74.875)
+
+[node name="StaticQuarterWall15" parent="Puzzle 3" instance=ExtResource("13_k8lae")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 2.25, 8.5, 72.125)
+
+[node name="StaticDoorFrame11" parent="Puzzle 3" instance=ExtResource("14_q5h4x")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 2.25, 9.75, 73.5)
+
+[node name="StaticQuarterWall16" parent="Puzzle 3" instance=ExtResource("13_k8lae")]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, 1.375, 8.5, 76.25)
+
+[node name="StaticQuarterWall21" parent="Puzzle 3" instance=ExtResource("13_k8lae")]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, -1.375, 8.5, 76.25)
+
+[node name="StaticDoorFrame12" parent="Puzzle 3" instance=ExtResource("14_q5h4x")]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, 0, 9.75, 76.25)
+
+[node name="Door12" parent="Puzzle 3" node_paths=PackedStringArray("mesh", "outlines") instance=ExtResource("3_b88qh")]
+transform = Transform3D(3.05979e-07, 0, -1, 0, 1, 0, 1, 0, 3.05979e-07, 2.25, 6, 73.5)
+mesh = NodePath("../../Puzzle 2/Door4/Hinge/DoorMesh")
+outlines = [NodePath("../../Puzzle 2/Door4/Hinge/DoorMesh/DoorOutline"), NodePath("../../Puzzle 2/Door4/Hinge/DoorMesh/HandleBackMesh/HandleBackOutline"), NodePath("../../Puzzle 2/Door4/Hinge/DoorMesh/KnobBackMesh/KnobBackOutline"), NodePath("../../Puzzle 2/Door4/Hinge/DoorMesh/HandleFrontMesh/HandleFrontOutline"), NodePath("../../Puzzle 2/Door4/Hinge/DoorMesh/KnobFrontMesh/KnobFrontOutline")]
+
+[node name="Door13" parent="Puzzle 3" node_paths=PackedStringArray("mesh", "outlines") instance=ExtResource("3_b88qh")]
+transform = Transform3D(-1, 0, -2.62268e-07, 0, 1, 0, 2.62268e-07, 0, -1, 0, 6, 76.25)
+mesh = NodePath("../../Puzzle 2/Door4/Hinge/DoorMesh")
+outlines = [NodePath("../../Puzzle 2/Door4/Hinge/DoorMesh/DoorOutline"), NodePath("../../Puzzle 2/Door4/Hinge/DoorMesh/HandleBackMesh/HandleBackOutline"), NodePath("../../Puzzle 2/Door4/Hinge/DoorMesh/KnobBackMesh/KnobBackOutline"), NodePath("../../Puzzle 2/Door4/Hinge/DoorMesh/HandleFrontMesh/HandleFrontOutline"), NodePath("../../Puzzle 2/Door4/Hinge/DoorMesh/KnobFrontMesh/KnobFrontOutline")]
+
+[node name="StaticQuarterWall22" parent="Puzzle 3" instance=ExtResource("13_k8lae")]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, 1.375, 8.5, 81.25)
+
+[node name="StaticQuarterWall23" parent="Puzzle 3" instance=ExtResource("13_k8lae")]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, -1.375, 8.5, 81.25)
+
+[node name="StaticDoorFrame13" parent="Puzzle 3" instance=ExtResource("14_q5h4x")]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, 0, 9.75, 81.25)
+
+[node name="StaticQuarterWall24" parent="Puzzle 3" instance=ExtResource("13_k8lae")]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, 6.375, 8.5, 86.25)
+
+[node name="StaticQuarterWall25" parent="Puzzle 3" instance=ExtResource("13_k8lae")]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, 3.625, 8.5, 86.25)
+
+[node name="StaticDoorFrame14" parent="Puzzle 3" instance=ExtResource("14_q5h4x")]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, 5, 9.75, 86.25)
+
+[node name="Door14" parent="Puzzle 3" node_paths=PackedStringArray("mesh", "outlines") instance=ExtResource("3_b88qh")]
+transform = Transform3D(-1, 0, -2.62268e-07, 0, 1, 0, 2.62268e-07, 0, -1, 0, 6, 81.25)
+mesh = NodePath("../../Puzzle 2/Door4/Hinge/DoorMesh")
+outlines = [NodePath("../../Puzzle 2/Door4/Hinge/DoorMesh/DoorOutline"), NodePath("../../Puzzle 2/Door4/Hinge/DoorMesh/HandleBackMesh/HandleBackOutline"), NodePath("../../Puzzle 2/Door4/Hinge/DoorMesh/KnobBackMesh/KnobBackOutline"), NodePath("../../Puzzle 2/Door4/Hinge/DoorMesh/HandleFrontMesh/HandleFrontOutline"), NodePath("../../Puzzle 2/Door4/Hinge/DoorMesh/KnobFrontMesh/KnobFrontOutline")]
+
+[node name="StaticPillar16" parent="Puzzle 3" instance=ExtResource("11_1cxi8")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 7.2497, 8.5, 86.2501)
+
+[node name="StaticPillar17" parent="Puzzle 3" instance=ExtResource("11_1cxi8")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 2.7497, 8.5, 86.2501)
+
+[node name="Door15" parent="Puzzle 3" node_paths=PackedStringArray("mesh", "outlines") instance=ExtResource("3_b88qh")]
+transform = Transform3D(-1, 0, -2.62268e-07, 0, 1, 0, 2.62268e-07, 0, -1, 5, 6, 86.25)
+mesh = NodePath("../../Puzzle 2/Door4/Hinge/DoorMesh")
+outlines = [NodePath("../../Puzzle 2/Door4/Hinge/DoorMesh/DoorOutline"), NodePath("../../Puzzle 2/Door4/Hinge/DoorMesh/HandleBackMesh/HandleBackOutline"), NodePath("../../Puzzle 2/Door4/Hinge/DoorMesh/KnobBackMesh/KnobBackOutline"), NodePath("../../Puzzle 2/Door4/Hinge/DoorMesh/HandleFrontMesh/HandleFrontOutline"), NodePath("../../Puzzle 2/Door4/Hinge/DoorMesh/KnobFrontMesh/KnobFrontOutline")]
+
+[node name="StaticPillar11" parent="Puzzle 3" instance=ExtResource("11_1cxi8")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 2.2497, 2.5, 81.7501)
+
+[node name="StaticQuarterWall12" parent="Puzzle 3" instance=ExtResource("13_k8lae")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 2.25, 2.5, 85.375)
+
+[node name="StaticQuarterWall13" parent="Puzzle 3" instance=ExtResource("13_k8lae")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 2.25, 2.5, 82.625)
+
+[node name="StaticDoorFrame8" parent="Puzzle 3" instance=ExtResource("14_q5h4x")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 2.25, 3.75, 84)
+
+[node name="Door11" parent="Puzzle 3" node_paths=PackedStringArray("mesh", "outlines") instance=ExtResource("3_b88qh")]
+transform = Transform3D(3.05979e-07, 0, -1, 0, 1, 0, 1, 0, 3.05979e-07, 2.25, 0, 84)
+mesh = NodePath("../../Puzzle 2/Door4/Hinge/DoorMesh")
+outlines = [NodePath("../../Puzzle 2/Door4/Hinge/DoorMesh/DoorOutline"), NodePath("../../Puzzle 2/Door4/Hinge/DoorMesh/HandleBackMesh/HandleBackOutline"), NodePath("../../Puzzle 2/Door4/Hinge/DoorMesh/KnobBackMesh/KnobBackOutline"), NodePath("../../Puzzle 2/Door4/Hinge/DoorMesh/HandleFrontMesh/HandleFrontOutline"), NodePath("../../Puzzle 2/Door4/Hinge/DoorMesh/KnobFrontMesh/KnobFrontOutline")]
+
+[node name="StaticPropFlatscreen" parent="Puzzle 3" instance=ExtResource("57_3etkc")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 3.5, 1.5, 101)
+
+[node name="StaticPropBed1" parent="Puzzle 3" instance=ExtResource("36_0fwk5")]
+transform = Transform3D(1.91069e-15, 1, -4.37114e-08, 4.37114e-08, -4.37114e-08, -1, -1, 0, -4.37114e-08, -7, 2.5, 73.5)
+
+[node name="StaticPropToilet" parent="Puzzle 3" instance=ExtResource("41_ii6sb")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 7, 0, 75)
+
+[node name="StaticPropToilet2" parent="Puzzle 3" instance=ExtResource("41_ii6sb")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 7, 1, 75)
+
+[node name="StaticPropToilet3" parent="Puzzle 3" instance=ExtResource("41_ii6sb")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 7, 2, 75)
+
+[node name="StaticPropToilet4" parent="Puzzle 3" instance=ExtResource("41_ii6sb")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 7, 3, 75)
+
+[node name="StaticPropToilet5" parent="Puzzle 3" instance=ExtResource("41_ii6sb")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 7, 4, 75)
+
+[node name="StaticPropBathroomSink" parent="Puzzle 3" instance=ExtResource("38_x5bsa")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 71.5)
+
+[node name="StaticPropBathroomSink2" parent="Puzzle 3" instance=ExtResource("38_x5bsa")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7, 0, 71.5)
+
+[node name="StaticPropBathroomMirror" parent="Puzzle 3" instance=ExtResource("42_852xj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 2, 71)
+
+[node name="StaticPropBathroomMirror2" parent="Puzzle 3" instance=ExtResource("42_852xj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7, 2, 71)
+
+[node name="StaticPropBathroomSink3" parent="Puzzle 3" instance=ExtResource("38_x5bsa")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 71.5)
+
+[node name="StaticPropBathroomSink4" parent="Puzzle 3" instance=ExtResource("38_x5bsa")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 71.5)
+
+[node name="StaticPropBathroomMirror3" parent="Puzzle 3" instance=ExtResource("42_852xj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 2, 71)
+
+[node name="StaticPropBathroomMirror4" parent="Puzzle 3" instance=ExtResource("42_852xj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 2, 71)
+
+[node name="StaticPropWorkShelf" parent="Puzzle 3" instance=ExtResource("63_i1bfs")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 7, 0, 89.25)
+
+[node name="StaticPropWorkShelf2" parent="Puzzle 3" instance=ExtResource("63_i1bfs")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 7, 0, 87.25)
+
+[node name="StaticPropWorkShelf3" parent="Puzzle 3" instance=ExtResource("63_i1bfs")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 7, 0, 85.25)
+
+[node name="StaticPropWorkShelf4" parent="Puzzle 3" instance=ExtResource("63_i1bfs")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 7, 0, 83.25)
+
+[node name="StaticPropBookshelf" parent="Puzzle 3" instance=ExtResource("47_cet34")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -6.75, 0, 83.75)
+
+[node name="StaticPropBookshelf2" parent="Puzzle 3" instance=ExtResource("47_cet34")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -6.75, 0, 82.5)
+
+[node name="StaticPropBookshelf3" parent="Puzzle 3" instance=ExtResource("47_cet34")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -6.75, 2.25, 83.75)
+
+[node name="StaticPropBookshelf4" parent="Puzzle 3" instance=ExtResource("47_cet34")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -6.75, 2.25, 82.5)
+
+[node name="StaticPropLight" parent="Puzzle 3" instance=ExtResource("20_tlfck")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.25, 5, 75)
+
+[node name="StaticPropLight2" parent="Puzzle 3" instance=ExtResource("20_tlfck")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.25, 5, 81)
+
+[node name="StaticPropLight3" parent="Puzzle 3" instance=ExtResource("20_tlfck")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 5, 73.25)
+
+[node name="StaticPropLight4" parent="Puzzle 3" instance=ExtResource("20_tlfck")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 5, 73.25)
+
+[node name="StaticPropLight5" parent="Puzzle 3" instance=ExtResource("20_tlfck")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 10.5, 78.5)
+
+[node name="StaticPropLight8" parent="Puzzle 3" instance=ExtResource("20_tlfck")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 10.5, 73.5)
+
+[node name="StaticPropLight9" parent="Puzzle 3" instance=ExtResource("20_tlfck")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5, 10.5, 73.5)
+
+[node name="StaticPropLight11" parent="Puzzle 3" instance=ExtResource("20_tlfck")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 11, 78.5)
+
+[node name="StaticPropLight12" parent="Puzzle 3" instance=ExtResource("20_tlfck")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 11, 84)
+
+[node name="StaticPropLight17" parent="Puzzle 3" instance=ExtResource("20_tlfck")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.25, 11, 83.75)
+
+[node name="StaticPropLight13" parent="Puzzle 3" instance=ExtResource("20_tlfck")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 11, 88.5)
+
+[node name="StaticPropLight16" parent="Puzzle 3" instance=ExtResource("20_tlfck")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.25, 10.5, 88.75)
+
+[node name="StaticPropLight14" parent="Puzzle 3" instance=ExtResource("20_tlfck")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 10.5, 84)
+
+[node name="StaticPropLight15" parent="Puzzle 3" instance=ExtResource("20_tlfck")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 10.5, 88.5)
+
+[node name="StaticPropLight10" parent="Puzzle 3" instance=ExtResource("20_tlfck")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 10.5, 73.5)
+
+[node name="StaticPropLight20" parent="Puzzle 3" instance=ExtResource("20_tlfck")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 11, 78.5)
+
+[node name="StaticPropLight6" parent="Puzzle 3" instance=ExtResource("20_tlfck")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 5, 83.5)
+
+[node name="StaticPropLight7" parent="Puzzle 3" instance=ExtResource("20_tlfck")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 5, 88.5)
+
+[node name="StaticPropKitchenCounterCorner" parent="Puzzle 3" instance=ExtResource("50_hr5fg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7, 0, 92)
+
+[node name="StaticPropKitchenCounter" parent="Puzzle 3" instance=ExtResource("49_7yw8j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 92)
+
+[node name="StaticPropKitchenCounter2" parent="Puzzle 3" instance=ExtResource("49_7yw8j")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 7, 0, 93)
+
+[node name="StaticPropKitchenSink" parent="Puzzle 3" instance=ExtResource("48_r4ioq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, 92)
+
+[node name="StaticPropOven" parent="Puzzle 3" instance=ExtResource("52_jq1ex")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 7, 0, 94)
+
+[node name="StaticPropDishwasher" parent="Puzzle 3" instance=ExtResource("51_dpjs7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 92)
+
+[node name="StaticPropKitchenCounter3" parent="Puzzle 3" instance=ExtResource("49_7yw8j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 92)
+
+[node name="StaticPropKitchenCabinet" parent="Puzzle 3" instance=ExtResource("53_sep68")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 2, 92)
+
+[node name="StaticPropKitchenCabinet2" parent="Puzzle 3" instance=ExtResource("53_sep68")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 2, 92)
+
+[node name="StaticPropKitchenCabinet3" parent="Puzzle 3" instance=ExtResource("53_sep68")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 2, 92)
+
+[node name="StaticPropKitchenCabinet4" parent="Puzzle 3" instance=ExtResource("53_sep68")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 2, 92)
+
+[node name="StaticPropBookshelf5" parent="Puzzle 3" instance=ExtResource("47_cet34")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 5.5, 0, 100.75)
+
+[node name="StaticPropBookshelf6" parent="Puzzle 3" instance=ExtResource("47_cet34")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 6.75, 0, 100.75)
+
+[node name="StaticPropCouch2" parent="Puzzle 3" instance=ExtResource("32_ha7md")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 0, 98.5)
+
+[node name="Lamp" parent="Puzzle 3" instance=ExtResource("6_a7xj0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 100.5)
+isPlayerInteractable = false
+
+[node name="StaticPropLight18" parent="Puzzle 3" instance=ExtResource("20_tlfck")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.75, 5, 96.5)
+
+[node name="StaticPropBookshelf7" parent="Puzzle 3" instance=ExtResource("47_cet34")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.625, 6, 71.375)
+
+[node name="StaticPropBookshelf8" parent="Puzzle 3" instance=ExtResource("47_cet34")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.375, 6, 71.375)
+
+[node name="StaticPropChair" parent="Puzzle 3" instance=ExtResource("51_oto85")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 6, 87)
+
+[node name="StaticPropBathroomSink5" parent="Puzzle 3" instance=ExtResource("38_x5bsa")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 7, 6, 90.625)
+
+[node name="StaticPropBathTub" parent="Puzzle 3" instance=ExtResource("39_3v6rg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.75, 6, 90.25)
+
+[node name="StaticPropBathroomRug" parent="Puzzle 3" instance=ExtResource("40_o8yk8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.75, 6, 89.125)
+
+[node name="StaticPropToilet6" parent="Puzzle 3" instance=ExtResource("41_ii6sb")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7, 6, 87)
+
+[node name="StaticPropBathroomMirror5" parent="Puzzle 3" instance=ExtResource("42_852xj")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 7, 8, 91)
+
+[node name="StaticPropLight19" parent="Puzzle 3" instance=ExtResource("20_tlfck")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, 5, 65.25)
+
+[node name="Sender Teleporter 1" parent="." node_paths=PackedStringArray("teleporterReceiver") instance=ExtResource("37_y4j2a")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 2.5, -18.25)
+teleporterType = "sender"
+teleporterReceiver = NodePath("../Receiver Teleporter 1")
+
+[node name="Receiver Teleporter 1" parent="." instance=ExtResource("37_y4j2a")]
+transform = Transform3D(1, 0, 1.74846e-07, 0, 1, 0, -1.74846e-07, 0, 1, 0, 0, 32.25)
+teleporterType = "receiver"
+
+[node name="Sender Teleporter 2" parent="." node_paths=PackedStringArray("teleporterReceiver") instance=ExtResource("37_y4j2a")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 4.25, 32.25)
+teleporterType = "sender"
+teleporterReceiver = NodePath("../Receiver Teleporter 2")
+
+[node name="Receiver Teleporter 2" parent="." instance=ExtResource("37_y4j2a")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.576731, 0, 65.2191)
+teleporterType = "receiver"
+
+[node name="StaticPropPlant" parent="." instance=ExtResource("63_sqip0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.25, 3.8, 73.5)

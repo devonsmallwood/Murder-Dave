@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://hfpmsxpsgwhp"]
+
+[ext_resource type="Material" uid="uid://cx3tjxi5rsfvg" path="res://Materials/WallMat.tres" id="1_wqat2"]
+[ext_resource type="Material" uid="uid://ba3a2vv1h31se" path="res://Materials/CeilingMat.tres" id="2_b84px"]
+
+[node name="StaticCeiling" type="CSGBox3D" groups=["Ground"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.25, 0)
+material_override = ExtResource("1_wqat2")
+use_collision = true
+collision_layer = 7
+collision_mask = 7
+size = Vector3(5, 0.5, 5)
+material = ExtResource("2_b84px")

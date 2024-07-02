@@ -1,0 +1,9 @@
+Input prompt sprite, models and textures for Dave, and smoke particles from Kenney.nl
+
+Pistol model and texture from Quaternius.com
+
+Character and furniture models and textures from Polygon.
+
+Additional textures from AmbientCG.com and FreeStockTextures.com
+
+Sounds and music from FreeSound.org

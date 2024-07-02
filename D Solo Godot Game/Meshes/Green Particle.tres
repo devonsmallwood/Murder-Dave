@@ -1,0 +1,8 @@
+[gd_resource type="SphereMesh" load_steps=2 format=3 uid="uid://s38scxl5b4vd"]
+
+[ext_resource type="Material" uid="uid://dmv7nrc656pk8" path="res://Materials/GreenGlowOutlineMat.tres" id="1_i5gw7"]
+
+[resource]
+material = ExtResource("1_i5gw7")
+radius = 0.025
+height = 0.05

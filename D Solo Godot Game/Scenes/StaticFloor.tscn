@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://b042ofw14r0oj"]
+
+[ext_resource type="Material" uid="uid://bthxkqisdhc5i" path="res://Materials/LightTileMat.tres" id="1_6kpqx"]
+[ext_resource type="Material" uid="uid://cwn8qjtyhoy4o" path="res://Materials/FloorMat.tres" id="1_453ld"]
+
+[node name="StaticFloor" type="CSGBox3D" groups=["Ground"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.25, 0)
+material_override = ExtResource("1_453ld")
+use_collision = true
+collision_layer = 7
+collision_mask = 7
+size = Vector3(5, 0.5, 5)
+material = ExtResource("1_6kpqx")

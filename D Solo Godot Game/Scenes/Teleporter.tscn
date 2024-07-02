@@ -1,0 +1,31 @@
+[gd_scene load_steps=4 format=3 uid="uid://dtjhn4hvjg8dy"]
+
+[ext_resource type="Script" path="res://Scripts/Teleporter.cs" id="1_ie4y8"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_eqbgm"]
+size = Vector3(1, 5, 5)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_hhfm0"]
+size = Vector3(1, 5, 5)
+
+[node name="Teleporter" type="RigidBody3D" node_paths=PackedStringArray("outlines", "receivers")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.5, 0)
+collision_layer = 0
+collision_mask = 0
+freeze = true
+script = ExtResource("1_ie4y8")
+outlines = []
+receivers = []
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 0, 0)
+shape = SubResource("BoxShape3D_eqbgm")
+
+[node name="Area3D" type="Area3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D"]
+shape = SubResource("BoxShape3D_hhfm0")
+
+[connection signal="body_shape_entered" from="Area3D" to="." method="EnteredRange"]
+[connection signal="body_shape_exited" from="Area3D" to="." method="ExitedRange"]

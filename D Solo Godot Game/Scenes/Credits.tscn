@@ -1,0 +1,70 @@
+[gd_scene load_steps=5 format=3 uid="uid://cgkd15ei4y7mu"]
+
+[ext_resource type="Script" path="res://Scripts/Credits.cs" id="1_pggsu"]
+[ext_resource type="FontFile" uid="uid://cyjdhnnvrn8e1" path="res://Assets/PoetsenOne-Regular.ttf" id="2_sfhuj"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_bw62w"]
+line_spacing = 36.0
+font = ExtResource("2_sfhuj")
+font_size = 20
+
+[sub_resource type="LabelSettings" id="LabelSettings_li5da"]
+font = ExtResource("2_sfhuj")
+
+[node name="Credits" type="Control"]
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_pggsu")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -65.5
+offset_top = -30.5
+offset_right = 65.5
+offset_bottom = 30.5
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+alignment = 1
+
+[node name="CreditsLabel" type="Label" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Credits"
+label_settings = SubResource("LabelSettings_bw62w")
+
+[node name="CreditsLabel2" type="Label" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Game by Devon Treit.
+
+Sprites, models and textures for Dave, and smoke particles from Kenney.nl
+
+Pistol model and texture from Quaternius.com
+
+Character and furniture models and textures from Polygon.
+
+Additional textures from AmbientCG.com and FreeStockTextures.com
+
+Sounds and music from FreeSound.org
+
+Thank you for playing my dumb game.
+"
+label_settings = SubResource("LabelSettings_li5da")
+
+[node name="BackButton" type="Button" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Back to Options"
+
+[connection signal="pressed" from="MarginContainer/VBoxContainer/BackButton" to="." method="Back"]

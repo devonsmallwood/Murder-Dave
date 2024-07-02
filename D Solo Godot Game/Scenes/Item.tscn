@@ -1,0 +1,33 @@
+[gd_scene load_steps=4 format=3 uid="uid://bi6wneivohukb"]
+
+[ext_resource type="Script" path="res://Scripts/Item.cs" id="1_qd1jc"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ki371"]
+size = Vector3(0.25, 0.25, 0.25)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_inigi"]
+size = Vector3(2, 2, 2)
+
+[node name="Item" type="RigidBody3D" groups=["Item"]]
+collision_layer = 2
+collision_mask = 2
+lock_rotation = true
+script = ExtResource("1_qd1jc")
+canBeInteractedWith = true
+interactText = "pick up"
+itemName = "item"
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." groups=["Item"]]
+shape = SubResource("BoxShape3D_ki371")
+
+[node name="Area3D" type="Area3D" parent="." groups=["Item"]]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D" groups=["Item"]]
+shape = SubResource("BoxShape3D_inigi")
+
+[node name="CheckForGround" type="RayCast3D" parent="."]
+target_position = Vector3(0, -100, 0)
+collision_mask = 4
+
+[connection signal="body_shape_entered" from="Area3D" to="." method="EnteredRange"]
+[connection signal="body_shape_exited" from="Area3D" to="." method="ExitedRange"]
