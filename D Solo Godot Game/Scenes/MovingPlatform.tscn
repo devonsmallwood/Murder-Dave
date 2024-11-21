@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://bag3823x1o544"]
+[gd_scene load_steps=12 format=4 uid="uid://bag3823x1o544"]
 
 [ext_resource type="Script" path="res://Scripts/MovingPlatform.cs" id="1_2am8i"]
 [ext_resource type="Material" uid="uid://cwn8qjtyhoy4o" path="res://Materials/FloorMat.tres" id="2_mahd8"]
@@ -16,13 +16,14 @@ size = Vector3(2, 0.25, 2)
 [sub_resource type="ArrayMesh" id="ArrayMesh_3qipl"]
 _surfaces = [{
 "aabb": AABB(-1.00577, -0.130773, -1.00577, 2.01155, 0.261557, 2.01156),
-"attribute_data": PackedByteArray(0, 0, 0, 0, 0, 0, 0, 0, 171, 170, 42, 63, 0, 0, 0, 0, 171, 170, 170, 62, 0, 0, 0, 0, 0, 0, 128, 63, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 63, 171, 170, 42, 63, 0, 0, 0, 63, 171, 170, 170, 62, 0, 0, 0, 63, 0, 0, 128, 63, 0, 0, 0, 63, 171, 170, 170, 62, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 63, 171, 170, 42, 63, 0, 0, 0, 0, 171, 170, 170, 62, 0, 0, 0, 63, 171, 170, 170, 62, 0, 0, 0, 63, 0, 0, 0, 0, 0, 0, 128, 63, 171, 170, 42, 63, 0, 0, 0, 63, 171, 170, 170, 62, 0, 0, 128, 63, 171, 170, 170, 62, 0, 0, 0, 63, 171, 170, 42, 63, 0, 0, 0, 63, 171, 170, 42, 63, 0, 0, 0, 63, 0, 0, 128, 63, 0, 0, 0, 63, 171, 170, 170, 62, 0, 0, 128, 63, 171, 170, 42, 63, 0, 0, 128, 63, 171, 170, 42, 63, 0, 0, 128, 63, 0, 0, 128, 63, 0, 0, 128, 63),
-"format": 4119,
+"attribute_data": PackedByteArray("AAAAAAAAAACrqio/AAAAAKuqqj4AAAAAAACAPwAAAAAAAAAAAAAAP6uqKj8AAAA/q6qqPgAAAD8AAIA/AAAAP6uqqj4AAAAAAAAAAAAAAD+rqio/AAAAAKuqqj4AAAA/q6qqPgAAAD8AAAAAAACAP6uqKj8AAAA/q6qqPgAAgD+rqqo+AAAAP6uqKj8AAAA/q6oqPwAAAD8AAIA/AAAAP6uqqj4AAIA/q6oqPwAAgD+rqio/AACAPwAAgD8AAIA/"),
+"format": 34359742487,
 "index_count": 36,
-"index_data": PackedByteArray(0, 0, 4, 0, 2, 0, 2, 0, 4, 0, 6, 0, 1, 0, 5, 0, 3, 0, 3, 0, 5, 0, 7, 0, 8, 0, 12, 0, 10, 0, 10, 0, 12, 0, 14, 0, 9, 0, 13, 0, 11, 0, 11, 0, 13, 0, 15, 0, 16, 0, 20, 0, 18, 0, 18, 0, 20, 0, 22, 0, 17, 0, 21, 0, 19, 0, 19, 0, 21, 0, 23, 0),
+"index_data": PackedByteArray("AAAEAAIAAgAEAAYAAQAFAAMAAwAFAAcACAAMAAoACgAMAA4ACQANAAsACwANAA8AEAAUABIAEgAUABYAEQAVABMAEwAVABcA"),
 "primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
 "vertex_count": 24,
-"vertex_data": PackedByteArray(48, 189, 128, 191, 125, 233, 5, 62, 48, 189, 128, 63, 255, 127, 255, 127, 255, 255, 255, 191, 48, 189, 128, 63, 125, 233, 5, 62, 48, 189, 128, 191, 255, 255, 255, 255, 0, 0, 255, 191, 48, 189, 128, 63, 125, 233, 5, 62, 48, 189, 128, 63, 255, 127, 255, 127, 255, 255, 255, 191, 48, 189, 128, 191, 125, 233, 5, 62, 48, 189, 128, 191, 255, 255, 255, 255, 0, 0, 255, 191, 48, 189, 128, 191, 125, 233, 5, 190, 48, 189, 128, 63, 255, 127, 255, 127, 255, 255, 255, 191, 48, 189, 128, 63, 125, 233, 5, 190, 48, 189, 128, 191, 255, 255, 255, 255, 0, 0, 255, 191, 48, 189, 128, 63, 125, 233, 5, 190, 48, 189, 128, 63, 255, 127, 255, 127, 255, 255, 255, 191, 48, 189, 128, 191, 125, 233, 5, 190, 48, 189, 128, 191, 255, 255, 255, 255, 0, 0, 255, 191, 48, 189, 128, 63, 125, 233, 5, 62, 48, 189, 128, 63, 255, 255, 0, 128, 255, 255, 255, 255, 48, 189, 128, 191, 125, 233, 5, 62, 48, 189, 128, 191, 0, 0, 0, 128, 255, 127, 255, 191, 48, 189, 128, 63, 125, 233, 5, 62, 48, 189, 128, 191, 255, 255, 0, 128, 255, 255, 255, 255, 48, 189, 128, 191, 125, 233, 5, 62, 48, 189, 128, 63, 0, 0, 0, 128, 255, 127, 255, 191, 48, 189, 128, 63, 125, 233, 5, 190, 48, 189, 128, 63, 255, 255, 0, 128, 255, 255, 255, 255, 48, 189, 128, 191, 125, 233, 5, 190, 48, 189, 128, 191, 0, 0, 0, 128, 255, 127, 255, 191, 48, 189, 128, 63, 125, 233, 5, 190, 48, 189, 128, 191, 255, 255, 0, 128, 255, 255, 255, 255, 48, 189, 128, 191, 125, 233, 5, 190, 48, 189, 128, 63, 0, 0, 0, 128, 255, 127, 255, 191, 48, 189, 128, 63, 125, 233, 5, 62, 48, 189, 128, 63, 0, 128, 255, 255, 0, 0, 255, 191, 48, 189, 128, 191, 125, 233, 5, 190, 48, 189, 128, 63, 0, 128, 0, 0, 255, 255, 255, 191, 48, 189, 128, 191, 125, 233, 5, 62, 48, 189, 128, 63, 0, 128, 255, 255, 0, 0, 255, 191, 48, 189, 128, 63, 125, 233, 5, 190, 48, 189, 128, 63, 0, 128, 0, 0, 255, 255, 255, 191, 48, 189, 128, 63, 125, 233, 5, 62, 48, 189, 128, 191, 0, 128, 255, 255, 0, 0, 255, 191, 48, 189, 128, 191, 125, 233, 5, 190, 48, 189, 128, 191, 0, 128, 0, 0, 255, 255, 255, 191, 48, 189, 128, 191, 125, 233, 5, 62, 48, 189, 128, 191, 0, 128, 255, 255, 0, 0, 255, 191, 48, 189, 128, 63, 125, 233, 5, 190, 48, 189, 128, 191, 0, 128, 0, 0, 255, 255, 255, 191)
+"vertex_data": PackedByteArray("ML2Av33pBT4wvYA/ML2AP33pBT4wvYC/ML2AP33pBT4wvYA/ML2Av33pBT4wvYC/ML2Av33pBb4wvYA/ML2AP33pBb4wvYC/ML2AP33pBb4wvYA/ML2Av33pBb4wvYC/ML2AP33pBT4wvYA/ML2Av33pBT4wvYC/ML2AP33pBT4wvYC/ML2Av33pBT4wvYA/ML2AP33pBb4wvYA/ML2Av33pBb4wvYC/ML2AP33pBb4wvYC/ML2Av33pBb4wvYA/ML2AP33pBT4wvYA/ML2Av33pBb4wvYA/ML2Av33pBT4wvYA/ML2AP33pBb4wvYA/ML2AP33pBT4wvYC/ML2Av33pBb4wvYC/ML2Av33pBT4wvYC/ML2AP33pBb4wvYC//3//f////7//////AAD/v/9//3////+//////wAA/7//f/9/////v/////8AAP+//3//f////7//////AAD/v///AID/////AAAAgP9//7///wCA/////wAAAID/f/+///8AgP////8AAACA/3//v///AID/////AAAAgP9//78AgP//AAD/vwCAAAD///+/AID//wAA/78AgAAA////vwCA//8AAP+/AIAAAP///78AgP//AAD/vwCAAAD///+/")
 }]
 
 [sub_resource type="Animation" id="Animation_qhftg"]
@@ -66,7 +67,7 @@ tracks/2/keys = {
 
 [sub_resource type="Animation" id="Animation_u24yg"]
 resource_name = "move_fwd_bck"
-length = 3.0
+length = 5.0
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -74,7 +75,7 @@ tracks/0/path = NodePath("CollisionShape3D:position")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 3),
+"times": PackedFloat32Array(0, 5),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
 "values": [Vector3(0, 0.125, 0), Vector3(0, 0.125, 10)]
@@ -86,7 +87,7 @@ tracks/1/path = NodePath("PlatformMesh:position")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
-"times": PackedFloat32Array(0, 3),
+"times": PackedFloat32Array(0, 5),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
 "values": [Vector3(0, 0.125, 0), Vector3(0, 0.125, 10)]
@@ -98,7 +99,7 @@ tracks/2/path = NodePath("AnimatableBody3D:position")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/keys = {
-"times": PackedFloat32Array(0, 3),
+"times": PackedFloat32Array(0, 5),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
 "values": [Vector3(0, 0.125, 0), Vector3(0, 0.125, 10)]

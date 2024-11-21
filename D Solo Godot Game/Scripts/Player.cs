@@ -83,10 +83,10 @@ public partial class Player : CharacterBody3D
 		}
 	}
 
-    public override void _Process(double delta)
-    {
+	public override void _Process(double delta)
+	{
 		
-    }
+	}
 
 	public override void _PhysicsProcess(double delta)
 	{
@@ -210,15 +210,15 @@ public partial class Player : CharacterBody3D
 		{
 			GetNode<AnimationPlayer>("AnimationPlayer").Play("Walk", -1);
 			StreamRandomFootstepSound();
-        	GetNode<AudioStreamPlayer3D>("AudioStreamPlayer3D").Play();
+			GetNode<AudioStreamPlayer3D>("AudioStreamPlayer3D").Play();
 		}
 	}
 
 	private void StreamRandomFootstepSound()
-    {
-        AudioStreamMP3 soundToPlay;
-        RandomNumberGenerator soundRandomizer = new RandomNumberGenerator();
-        soundToPlay = footstepSounds[soundRandomizer.RandiRange(0, footstepSounds.Length - 1)];
-        GetNode<AudioStreamPlayer3D>("AudioStreamPlayer3D").Stream = soundToPlay;
-    }
+	{
+		AudioStreamMP3 soundToPlay;
+		RandomNumberGenerator soundRandomizer = new RandomNumberGenerator();
+		soundToPlay = footstepSounds[soundRandomizer.RandiRange(0, footstepSounds.Length - 1)];
+		GetNode<AudioStreamPlayer3D>("AudioStreamPlayer3D").Stream = soundToPlay;
+	}
 }
